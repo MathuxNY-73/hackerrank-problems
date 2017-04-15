@@ -52,7 +52,9 @@ vector<Ladder> readLadderOrSnakes();
 void printBoard(const vector<Ladder>, const vector<Ladder>);
 bool populatePossibilities(queue<int>&, int, const vector<Ladder>, const vector<Ladder>, unordered_set<int>&);
 bool contains(const unordered_set<int>, int);
+bool checkIfPossible(const vector<Ladder>);
 int treeBfs(const vector<Ladder>, const vector<Ladder>);
+void printQueue(queue<int>);
 
 int main() {
 
@@ -70,8 +72,16 @@ int main() {
         sort(ladders.begin(), ladders.end(), ladderComp());
         sort(snakes.begin(), snakes.end(), ladderComp());
 
+        if(!checkIfPossible(snakes)) 
+        {
+            cout << -1 << endl;     
+        }
+        else
+        {
+            cout << treeBfs(ladders, snakes) << endl;
+        }
+
 //        printBoard(ladders, snakes);
-        cout << treeBfs(ladders, snakes) << endl;
     }
 
 }
@@ -95,7 +105,7 @@ vector<Ladder> readLadderOrSnakes() {
 int treeBfs(const vector<Ladder> ladders, const vector<Ladder> snakes) 
 {
     unordered_set<int> visited(100);
-    queue<int>* q = new queue<int>;
+    queue<int>* q = new queue<int>; 
     queue<int>* nextLevelQueue;
     int numberOfAction = 1;
 
@@ -129,6 +139,8 @@ int treeBfs(const vector<Ladder> ladders, const vector<Ladder> snakes)
         }
     }
 
+    delete q;
+    delete nextLevelQueue;
     return -1;
 }
 
@@ -144,22 +156,28 @@ bool populatePossibilities(queue<int>& q, int start, const vector<Ladder> ladder
 
         bool snakeOrLadderFound = false;
         vector<Ladder>::const_iterator lad = find(ladders.begin(), ladders.end(), Ladder(curr, curr));
-        if(lad != ladders.end() && !contains(visited, lad->end))
+        if(lad != ladders.end())
         {
+            snakeOrLadderFound = true;
             if(lad->end == 100)
                 finished = true;
 
-            q.push(lad->end);
-            snakeOrLadderFound = true;
-            visited.insert(lad->end);
+            if(!contains(visited, lad->end))
+            {
+                q.push(lad->end);
+                visited.insert(lad->end);
+            }
         }
 
         vector<Ladder>::const_iterator sn = find(snakes.begin(), snakes.end(), Ladder(curr, curr));
-        if(sn != snakes.end() && !contains(visited, sn->end))
+        if(sn != snakes.end())
         {
-            q.push(sn->end);
             snakeOrLadderFound = true;
-            visited.insert(sn->end);
+            if(!contains(visited, sn->end))
+            { 
+                q.push(sn->end);
+                visited.insert(sn->end);
+            }
         }
 
         if(!snakeOrLadderFound && !contains(visited, curr))
@@ -169,6 +187,16 @@ bool populatePossibilities(queue<int>& q, int start, const vector<Ladder> ladder
         }
     }
     return finished;
+}
+
+bool checkIfPossible(const vector<Ladder> snakes)
+{
+    return find(snakes.cbegin(), snakes.cend(), Ladder(94, 94)) == snakes.cend() ||
+        find(snakes.cbegin(), snakes.cend(), Ladder(95, 95)) == snakes.cend() ||
+        find(snakes.cbegin(), snakes.cend(), Ladder(96, 96)) == snakes.cend() ||
+        find(snakes.cbegin(), snakes.cend(), Ladder(97, 97)) == snakes.cend() ||
+        find(snakes.cbegin(), snakes.cend(), Ladder(98, 98)) == snakes.cend() ||
+        find(snakes.cbegin(), snakes.cend(), Ladder(99, 99)) == snakes.cend();;
 }
 
 bool contains(const unordered_set<int> set, int item)
@@ -193,4 +221,15 @@ void printBoard(const vector<Ladder> ladders, const vector<Ladder> snakes)
         cout << "Starts: " << iter->begin << ", Ends: " << iter->end << endl;
         ++iter;
     }
+}
+
+void printQueue(queue<int> q)
+{
+    while(q.size() > 0)
+    {
+        int curr = q.front();
+        cout << curr << " ";
+        q.pop();
+    }
+    cout << endl;
 }
