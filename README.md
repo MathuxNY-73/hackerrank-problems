@@ -16,3 +16,11 @@ As of April 15<sup>th</sup>, 2017:
 - [X] Find a first working solution on the sample output
 - [X] Submit solution. Got a timeout on bigger testcases.
 - [ ] Optimize solution and get correct answer. Challenge solved.
+
+### Max-Min
+The solution I tried in order to solve this problem is contained in the minMax directory.
+The goal was to find the smallest difference between the minimum and the maximum of a subset of integer of size k which were taken from a larger set of integer of siwe N. [Problem link](https://www.hackerrank.com/challenges/angry-children)
+As of August 12<sup>th</sup>, 2017:
+- [X] Find a first working solution on the sample output
+- [X] Submit solution. Got wrong answer on some test cases.
+- [X] Problem was that the INF constant was not sufficiently high compared to the constraint of the problem. Challenge solved.
