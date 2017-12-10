@@ -1,7 +1,4 @@
-class Solution {
+#include "solution.h"
 
-    public:
-        string longestPalindrome(string s) {
-                    
-        }
+Solution::longestPalindrome(string s) {
 }
