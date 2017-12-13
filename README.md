@@ -24,3 +24,17 @@ As of August 12<sup>th</sup>, 2017:
 - [X] Find a first working solution on the sample output
 - [X] Submit solution. Got wrong answer on some test cases.
 - [X] Problem was that the INF constant was not sufficiently high compared to the constraint of the problem. Challenge solved.
+
+## Grading Students
+This is a implementation algorithm challenge from hackerrank. The goal was simply to compute the grade of students in a class following a specific set of rules.
+I solved this problem in C language. [Problem link](https://www.hackerrank.com/domains/algorithms/implementation/grading/problem)
+As of December 13<sup>th</sup>, 2017:
+- [X] Find a first working solution on the sample output
+- [X] Submit solution. Got it answer
+
+## A Very Big Sum
+This is a warmup algorithm problem from hackerrank. The goal was simply to calculate the sum of very big numbers.
+I solved this problem in C language. [Problem link](https://www.hackerrank.com/challenges/a-very-big-sum/problem)
+As of December 13<sup>th</sup>, 2017:
+- [X] Find a first working solution on the sample output
+- [X] Submit solution. Got right answer
