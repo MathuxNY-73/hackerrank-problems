@@ -38,3 +38,27 @@ I solved this problem in C language. [Problem link](https://www.hackerrank.com/c
 As of December 13<sup>th</sup>, 2017:
 - [X] Find a first working solution on the sample output
 - [X] Submit solution. Got right answer
+
+### Closest Numbers
+This is a sorting algorithm problem from hackerrank. The goal was to find a pair of numbers in an array of integers with the smallest
+difference.  
+I solved this problem in C language. [Problem link](https://www.hackerrank.com/challenges/closest-numbers/problem)  
+As of December 31<sup>st</sup>, 2017:
+- [X] Find a first working solution on the sample output
+- [X] Submit solution. Got right answer
+
+### Candies
+This is a dynamic programming problem from hackerrank. The goal is to give out candies to a class of students who are attributed
+a grade. Candy distribution needs to take the grade into account.
+I solved this problem in C++ language. [Problem link](https://www.hackerrank.com/challenges/candies/problem)
+As of December 31<sup>st</sup>, 2017:
+- [X] Find a first working solution on the sample output
+- [X] Submit solution. Got right answer
+
+### Palindrome Index
+This is a string algorithm problem form hackerrank. The goal is to find if there exists a character in the string that, when removed renders
+ the string palindromic. The goal is to return the index of such character or -1 if that does not exist.
+ I used this problem in C++ language. [Problem link](https://www.hackerrank.com/challenges/palindrome-index/problem)
+As of December 31<sup>st</sup>, 2017:
+- [X] Find a first working solution on the sample output
+- [ ] Submit solution. Got wrong answer
