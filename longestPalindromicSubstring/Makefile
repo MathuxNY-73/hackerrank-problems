@@ -11,7 +11,7 @@ main: main.o
 	@$(CC) -o $@ $^ $(LDFLAGS)
 
 %.o : %.cpp
-	$(CC) -o $@ -c $< $(CLFAGS)
+	$(CC) -o $@ -c $< $(CFLAGS)
 
 main.o: solution.h
 

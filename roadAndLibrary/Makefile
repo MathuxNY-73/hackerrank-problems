@@ -11,7 +11,7 @@ main: main.o
 	@$(CC) -o $@ $^ $(LDFLAGS)
 
 %.o : %.c
-	$(CC) -o $@ -c $< $(CLFAGS)
+	$(CC) -o $@ -c $< $(CFLAGS)
 
 .PHONY: clean mrproper
 

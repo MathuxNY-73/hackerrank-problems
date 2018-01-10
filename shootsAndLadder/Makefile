@@ -11,7 +11,7 @@ shootsAndLadder: shootsAndLadder.o
 	@$(CC) -o $@ $^ $(LDFLAGS)
 
 %.o : %.cpp
-	$(CC) -o $@ -c $< $(CLFAGS)
+	$(CC) -o $@ -c $< $(CFLAGS)
 
 .PHONY: clean mrproper
 
