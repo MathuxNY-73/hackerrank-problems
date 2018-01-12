@@ -25,8 +25,8 @@
 
 using namespace std;
 
-vector<int> giveCandies(vector<int>);
-void writeCandies(vector<int>);
+vector<int> giveCandies(const vector<int>&);
+void writeCandies(const vector<int>&);
 vector<int> initArray(int);
 int getTrend(int, int);
 
@@ -58,29 +58,30 @@ int main() {
     return 0;
 }
 
-vector<int> giveCandies(vector<int> ratings)
+int init(int trend, int a, int b)
 {
-    auto init = [](bool trend, int a, int b) -> int
-    {
-        return trend == 1 ? b : a;
-    };
+    return trend == 1 ? b : a;
+}
 
-    auto stopCond = [](bool trend, int t, int a, int b) -> bool
-    {
-        return trend == 1 ? t >= a : t <= b;
-    };
+bool stopCond(int trend, int t, int a, int b)
+{
+    return trend == 1 ? t >= a : t <= b;
+}
 
-    auto next = [](bool trend, int& k)
+void next(int trend, int& k)
+{
+    if(trend == 1)
     {
-        if(trend == 1)
-        {
-            --k;
-        }
-        else
-        {
-            ++k;
-        }
-    };
+        --k;
+    }
+    else
+    {
+        ++k;
+    }
+}
+
+vector<int> giveCandies(const vector<int>& ratings)
+{
 
     vector<int> res = initArray(ratings.size());
     for(int i = 0; i < ratings.size() - 1 ; ++i)
@@ -130,7 +131,7 @@ vector<int> initArray(int size)
     return res;
 }
 
-void writeCandies(vector<int> candies)
+void writeCandies(const vector<int>& candies)
 {
     for(int i = 0; i < candies.size(); ++i)
     {
