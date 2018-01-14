@@ -58,30 +58,30 @@ int main() {
     return 0;
 }
 
-int init(int trend, int a, int b)
-{
-    return trend == 1 ? b : a;
-}
-
-bool stopCond(int trend, int t, int a, int b)
-{
-    return trend == 1 ? t >= a : t <= b;
-}
-
-void next(int trend, int& k)
-{
-    if(trend == 1)
-    {
-        --k;
-    }
-    else
-    {
-        ++k;
-    }
-}
-
 vector<int> giveCandies(const vector<int>& ratings)
 {
+
+    auto init = [](int trend, int a, int b) -> int
+    {
+        return trend == 1 ? b : a;
+    };
+
+    auto stopCond = [](int trend, int t, int a, int b) -> bool
+    {
+        return trend == 1 ? t >= a : t <= b;
+    };
+
+    auto next = [](int trend, int& k) -> void
+    {
+        if(trend == 1)
+        {
+            --k;
+        }
+        else
+        {
+            ++k;
+        }
+    };
 
     vector<int> res = initArray(ratings.size());
     for(int i = 0; i < ratings.size() - 1 ; ++i)
