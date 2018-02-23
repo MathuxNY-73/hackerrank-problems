@@ -1,5 +1,5 @@
-CC=g++
-CFLAGS=-W -Wall -std=c++14 -pedantic
+CXX=g++
+CXFLAGS=-W -Wall -std=c++14 -pedantic
 LDFLAGS=
 EXEC=shootsAndLadder
 SRC=$(wildcard *.cpp)
@@ -8,10 +8,10 @@ OBJ=$(SRC:.cpp=.o)
 all: $(EXEC)
 
 shootsAndLadder: shootsAndLadder.o
-	@$(CC) -o $@ $^ $(LDFLAGS)
+	$(CXX) -o $@ $^ $(LDFLAGS)
 
 %.o : %.cpp
-	$(CC) -o $@ -c $< $(CFLAGS)
+	$(CXX) -o $@ -c $< $(CXFLAGS)
 
 .PHONY: clean mrproper
 
