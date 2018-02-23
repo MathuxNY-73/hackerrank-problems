@@ -56,9 +56,17 @@ As of December 31<sup>st</sup>, 2017:
 - [X] Submit solution. Got right answer
 
 ### Palindrome Index
-This is a string algorithm problem form hackerrank. The goal is to find if there exists a character in the string that, when removed renders
+This is a string algorithm problem from hackerrank. The goal is to find if there exists a character in the string that, when removed renders
  the string palindromic. The goal is to return the index of such character or -1 if that does not exist.
  I used this problem in C++ language. [Problem link](https://www.hackerrank.com/challenges/palindrome-index/problem)
 As of December 31<sup>st</sup>, 2017:
 - [X] Find a first working solution on the sample output
 - [ ] Submit solution. Got wrong answer
+
+### Bot Save Princess 2
+This is a bot building problem from hackerrank. The goal is to program a bot that will save a princess located on a matrix. There are no obstacles, the bot can go in a straight line.  
+I solved this problem using the C language. [Problem link](https://www.hackerrank.com/challenges/saveprincess2)
+As of February 23<sup>rd</sup>, 2018:
+- [X] Find a first working solution on the sample output
+- [X] Submit first solution
+- [X] Problem solved
