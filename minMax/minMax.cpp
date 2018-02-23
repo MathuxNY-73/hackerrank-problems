@@ -21,8 +21,7 @@
 #include <ctime>
 #include <cassert>
 #include <unordered_set>
-
-#define INF 9999999999
+#include <limits>
 
 using namespace std;
 
@@ -57,7 +56,7 @@ int solve(vector<int> intArray, int k)
 {
     std::sort(intArray.begin(), intArray.end());
 
-    int i = 0, fairness = INF;
+    int i = 0, fairness = numeric_limits<int>::max();
 
     while(!intArray.empty() && i+k <= intArray.size())
     {
