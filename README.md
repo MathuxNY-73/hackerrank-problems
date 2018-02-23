@@ -79,3 +79,6 @@ I solved this problem using the C language. [Problem link](https://www.hackerran
 As of February 23<sup>rd</sup>, 2018:
 - [X] Find a first working solution on the sample output in C++
 - [X] Submit first solution. Got a timeout on big sets as I do a DFS on the combination tree
+- [X] Find a second working solution on the sample output in C
+- [X] Submit second solution
+- [X] Problem solved
