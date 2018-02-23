@@ -65,8 +65,17 @@ As of December 31<sup>st</sup>, 2017:
 
 ### Bot Save Princess 2
 This is a bot building problem from hackerrank. The goal is to program a bot that will save a princess located on a matrix. There are no obstacles, the bot can go in a straight line.  
+This challenge was part of the Criteo Algorithm Competition of February 2018.  
 I solved this problem using the C language. [Problem link](https://www.hackerrank.com/challenges/saveprincess2)
 As of February 23<sup>rd</sup>, 2018:
 - [X] Find a first working solution on the sample output
 - [X] Submit first solution
 - [X] Problem solved
+
+### Mandragora Forest
+This is a dynamic programming algorithm problem from hackerrank. The is to find the best combination of actions to do (battle or eat) to win the maximum number of XP points.  
+This challenge was part of the Criteo Algorithm Competition of February 2018.  
+I solved this problem using the C language. [Problem link](https://www.hackerrank.com/challenges/mandragora/problem)
+As of February 23<sup>rd</sup>, 2018:
+- [X] Find a first working solution on the sample output in C++
+- [X] Submit first solution. Got a timeout on big sets as I do a DFS on the combination tree
