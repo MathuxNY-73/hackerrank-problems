@@ -30,7 +30,7 @@ int main() {
     cin >> n >> d;
 
     if( n <= d ) {
-        cout << 0 << endl;
+        std::cout << 0 << endl;
     }
 
     vector<int> operations(n);
@@ -40,66 +40,48 @@ int main() {
         cin >> operations[i];
     }
 
-    multiset<int> medians;
-    queue<multiset<int>::iterator> iterQ;
+    // We use pairs here to store both the element and the index of the element
+    // in the original vector to allow us to differentiate element.
+    // Courtesy of Frederic Jardon (fjardon)
+    set<pair<int,int>> medians;
+    queue<set<pair<int,int>>::iterator> iterQ;
 
     for(int i = 0 ; i < d ; ++i)
     {
-        iterQ.push(medians.insert(operations[i]));
+        iterQ.push(medians.insert(make_pair(operations[i],i)).first);
     }
 
-    //cout << "Hello 4: ";
-    //    for(auto it = medians.cbegin(); it != medians.cend() ; ++it)
-    //        cout << *it << " ";
-    //    cout << endl;
-
-    multiset<int>::iterator itl = medians.begin();
-    multiset<int>::iterator itu = medians.begin();
+    set<pair<int,int>>::iterator itl = medians.begin();
+    set<pair<int,int>>::iterator itu = medians.begin();
     int lower = floor((d-1)/2.0);
     int upper = ceil((d-1)/2.0);
     advance(itl, lower);
-    //cout << "Test: " << (d-1)/2.0 << " Floor: " <<floor((d-1)/2.0) << endl;
-    //cout << "Test: " << (d-1)/2.0 << " Ceil: " <<ceil((d-1)/2.0) << endl;
     advance(itu, upper);
 
     int notifs = 0;
     for(int i = d ; i < operations.size() ; ++i)
     {
-        //cout << "Medians: " << &medians << endl;
         int op = operations[i];
-        //cout << "i: " << i << endl;
-        //cout << "notif: " << notifs << endl;
-        float median = (*itl + *itu) / 2.0;
-        //cout << "Hello 1: " << *(itl) << endl;
-        //cout << "Hello 2: " << *(itu) << endl;
-        //cout << "Hello 3: " << median << endl;
-        //cout << "Hello 5: " << distance(medians.cbegin(), itl) << " " << distance(medians.cbegin(), itu) << endl;
+        float median = (itl->first + itu->first) / 2.0;
         if(op >= median * 2)
         {
             ++notifs;
         }
-        multiset<int>::iterator iter = iterQ.front();
-        iterQ.push(medians.insert(op));
-        cout << "Test violent: " << &itl << endl;
+        set<pair<int,int>>::iterator iter = iterQ.front();
+        set<pair<int,int>>::iterator added = medians.insert(make_pair(op,i)).first;
+        iterQ.push(added);
 
-        if(*iter <= *itl && op > *itl)
-            advance(itl, 1);
-        else if(*iter >= *itl && op < *itl)
-            advance(itl, -1);
-        if(*iter <= *itu && op > *itu)
-            advance(itu, 1);
-        else if(*iter >= *itu && op < *itu)
-            advance(itu, -1);
+        if(*iter <= *itl && *added > *itl)
+            ++itl;
+        if(*iter >= *itl && *added < *itl)
+            --itl;
+        if(*iter <= *itu && *added > *itu)
+            ++itu;
+        if(*iter >= *itu && *added < *itu)
+            --itu;
 
         medians.erase(iter);
         iterQ.pop();
-        //cout << "Hello 6" << endl;
-        //cout << "Hello 7" << endl;
-        //cout << "Hello 4: ";
-        //for(auto it = medians.cbegin(); it != medians.cend() ; ++it)
-        //    cout << *it << " ";
-        //cout << endl;
-
     }
 
     cout << notifs << endl;

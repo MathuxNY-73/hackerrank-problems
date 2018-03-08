@@ -92,4 +92,7 @@ As of February 23<sup>rd</sup>, 2018:
 - [X] Submit first solution. Got timeout on big sets because of item removal in priority queue
 - [X] Find a second working solution on the sample input
 - [X] Submit second solution. Got wrong answer on big sets because of item removal in priority queue
-- [ ] Find a third working solution on the sample input
+- [X] Find a solution using another method that works on the sample input
+- [X] Submit solution. Got correct
+- [X] Problem solved
+- [ ] Find a third solution using first method working on the sample input
