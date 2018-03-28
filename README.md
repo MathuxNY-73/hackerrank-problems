@@ -11,7 +11,7 @@ As of March 28<sup>th</sup>, 2018 :
 - [X] Optimized solution and got correct answer. Challenge solved.
 - [X] Find a second working solution on the sample input
 - [X] Submitted second solution. Got errors
-- [ ] Challenge solved with solution 2
+- [X] Challenge solved with solution 2
 
 ### Journey to the moon
 The solution I tried for solving this problem will be found in the journey to the directory.

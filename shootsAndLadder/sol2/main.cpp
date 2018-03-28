@@ -29,9 +29,10 @@ queue<int>& q,
 unordered_set<int>& v,
 const map<int, int>& ladders,
 const map<int, int>& snakes) {
+    bool res = false;
     for(auto i = 0 ; i < 6 ; ++i)
     {
-        int next = start + i;
+        int next = start + (i + 1);
         auto lad = ladders.find(next);
         auto sn = snakes.find(next);
         if(lad != ladders.cend())
@@ -43,9 +44,10 @@ const map<int, int>& snakes) {
             next = sn->second;
         }
 
-        if(next == 100)
+        if(next >= 100)
         {
-            return true;
+            next = 100;
+            res = true;
         }
 
         if(v.find(next) == v.cend())
@@ -54,7 +56,22 @@ const map<int, int>& snakes) {
             q.push(next);
         }
     }
-    return false;
+    return res;
+}
+
+void print(const unordered_set<int>& v) {
+    for(auto it = v.cbegin(); it != v.cend() ; ++it) {
+        cout << *it << " ";
+    }
+    cout << endl;
+}
+
+void print(queue<int> q) {
+    while(q.size() > 0) {
+        cout << q.front() << " ";
+        q.pop();
+    }
+    cout << endl;
 }
 
 int main() {
@@ -104,7 +121,7 @@ int main() {
 
         unordered_set<int> v(100);
         queue<int> q;
-        int start = 0;
+        int start = 1;
         int nActions = 1;
 
         if(nextActions(start, q, v, ladders,snakes))
@@ -122,13 +139,20 @@ int main() {
 
             if(nextActions(curr, nLQ, v, ladders, snakes))
             {
-                cout << nActions << endl;
+                cout << nActions + 1 << endl;
                 solved = true;
             }
 
+            cout << "nLQ: ";
+            print(nLQ);
+            cout << "q: ";
+            print(q);
+
             if(q.size() == 0 && nLQ.size() != 0)
             {
+                print(v);
                 q = queue<int>(nLQ);
+                nLQ = queue<int>();
                 ++nActions;
             }
         }
