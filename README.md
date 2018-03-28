@@ -86,7 +86,7 @@ As of February 23<sup>rd</sup>, 2018:
 ### Fraudulent Activity Notifications
 This is a sorting algorithm problem from hackerrank. The goal is to determine how many notifications about fraudulent activity a bank customer would receive considering a sequence of operations  
 This challenge was part of the Criteo Algorithm Competition of February 2018.  
-I tried to solve this problem using the C++ language. [Problem link](https://www.hackerrank.com/challenges/fraudulent-activity-notifications/problem)
+I solved this problem using the C++ language. [Problem link](https://www.hackerrank.com/challenges/fraudulent-activity-notifications/problem)
 As of February 23<sup>rd</sup>, 2018:
 - [X] Find a first working solution on the sample input
 - [X] Submit first solution. Got timeout on big sets because of item removal in priority queue
@@ -96,6 +96,15 @@ As of February 23<sup>rd</sup>, 2018:
 - [X] Submit solution. Got correct
 - [X] Problem solved
 - [ ] Find a third solution using first method working on the sample input
+
+### Diagonal Difference
+This is warmup algorithm problem form hackerrank. The goal is to compute the absolute difference between the two diagonals of a square matrix.  
+This challenge was part of the Criteo Algorithm Competition of March 2018.  
+I solved this problem using the C++ language. [Problem link](https://www.hackerrank.com/challenges/diagonal-difference/problem)
+As of March 28<sup>th</sup>, 2018:
+- [X] Find a first working solution on the sample input
+- [X] Submit first solution. Got correct
+- [X] Problem solved
 
 ### The best restaurant (BattleDev March 2018)
 [Problem link](https://www.isograd.com/FR/solutionconcours.php#)
