@@ -96,3 +96,12 @@ As of February 23<sup>rd</sup>, 2018:
 - [X] Submit solution. Got correct
 - [X] Problem solved
 - [ ] Find a third solution using first method working on the sample input
+
+### The best restaurant (BattleDev March 2018)
+[Problem link](https://www.isograd.com/FR/solutionconcours.php#)
+
+### All-you-can eat buffet (BattleDev March 2018)
+[Problem link](https://www.isograd.com/FR/solutionconcours.php#)
+
+### Friends (BattleDev March 2018)
+[Problem link](https://www.isograd.com/FR/solutionconcours.php#)
