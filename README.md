@@ -4,10 +4,14 @@ This repository contains all problems I solved from the hacker rank website
 ### The Snakes and Ladder problem
 The solution I tried for solving this problem is contained in the shootsAndLadder directory.
 The goal was to find the smallest number of die rolls to get to the 100<sup>th</sup> square. [Problem link](https://www.hackerrank.com/challenges/the-quickest-way-up).  
-As of April 15<sup>th</sup>, 2017 :
+As this problem has chosen as part of the Criteo Algorithm Competition of March 2018, I had to solve it again from scratch. Solutions have been separated into 2 folders.  
+As of March 28<sup>th</sup>, 2018 :
 - [X] Find a first working solution on the sample input
 - [X] Submitted second solution. Got a timeout on bigger testcases.
 - [X] Optimized solution and got correct answer. Challenge solved.
+- [X] Find a second working solution on the sample input
+- [X] Submitted second solution. Got errors
+- [ ] Challenge solved with solution 2
 
 ### Journey to the moon
 The solution I tried for solving this problem will be found in the journey to the directory.
@@ -50,7 +54,7 @@ As of December 31<sup>st</sup>, 2017:
 ### Candies
 This is a dynamic programming problem from hackerrank. The goal is to give out candies to a class of students who are attributed
 a grade. Candy distribution needs to take the grade into account.
-I solved this problem in C++ language. [Problem link](https://www.hackerrank.com/challenges/candies/problem)
+I solved this problem in C++ language. [Problem link](https://www.hackerrank.com/challenges/candies/problem)  
 As of December 31<sup>st</sup>, 2017:
 - [X] Find a first working solution on the sample input
 - [X] Submit solution. Got right answer
@@ -58,7 +62,7 @@ As of December 31<sup>st</sup>, 2017:
 ### Palindrome Index
 This is a string algorithm problem from hackerrank. The goal is to find if there exists a character in the string that, when removed renders
  the string palindromic. The goal is to return the index of such character or -1 if that does not exist.
- I used this problem in C++ language. [Problem link](https://www.hackerrank.com/challenges/palindrome-index/problem)
+ I used this problem in C++ language. [Problem link](https://www.hackerrank.com/challenges/palindrome-index/problem)  
 As of December 31<sup>st</sup>, 2017:
 - [X] Find a first working solution on the sample input
 - [ ] Submit solution. Got wrong answer
@@ -66,7 +70,7 @@ As of December 31<sup>st</sup>, 2017:
 ### Bot Save Princess 2
 This is a bot building problem from hackerrank. The goal is to program a bot that will save a princess located on a matrix. There are no obstacles, the bot can go in a straight line.  
 This challenge was part of the Criteo Algorithm Competition of February 2018.  
-I solved this problem using the C language. [Problem link](https://www.hackerrank.com/challenges/saveprincess2)
+I solved this problem using the C language. [Problem link](https://www.hackerrank.com/challenges/saveprincess2)  
 As of February 23<sup>rd</sup>, 2018:
 - [X] Find a first working solution on the sample input
 - [X] Submit first solution
@@ -75,7 +79,7 @@ As of February 23<sup>rd</sup>, 2018:
 ### Mandragora Forest
 This is a dynamic programming algorithm problem from hackerrank. The goal is to find the best combination of actions to do (battle or eat) to win the maximum number of XP points.  
 This challenge was part of the Criteo Algorithm Competition of February 2018.  
-I solved this problem using the C language. [Problem link](https://www.hackerrank.com/challenges/mandragora/problem)
+I solved this problem using the C language. [Problem link](https://www.hackerrank.com/challenges/mandragora/problem)  
 As of February 23<sup>rd</sup>, 2018:
 - [X] Find a first working solution on the sample input in C++
 - [X] Submit first solution. Got a timeout on big sets as I do a DFS on the combination tree
@@ -86,7 +90,7 @@ As of February 23<sup>rd</sup>, 2018:
 ### Fraudulent Activity Notifications
 This is a sorting algorithm problem from hackerrank. The goal is to determine how many notifications about fraudulent activity a bank customer would receive considering a sequence of operations  
 This challenge was part of the Criteo Algorithm Competition of February 2018.  
-I solved this problem using the C++ language. [Problem link](https://www.hackerrank.com/challenges/fraudulent-activity-notifications/problem)
+I solved this problem using the C++ language. [Problem link](https://www.hackerrank.com/challenges/fraudulent-activity-notifications/problem)  
 As of February 23<sup>rd</sup>, 2018:
 - [X] Find a first working solution on the sample input
 - [X] Submit first solution. Got timeout on big sets because of item removal in priority queue
@@ -100,7 +104,7 @@ As of February 23<sup>rd</sup>, 2018:
 ### Diagonal Difference
 This is warmup algorithm problem form hackerrank. The goal is to compute the absolute difference between the two diagonals of a square matrix.  
 This challenge was part of the Criteo Algorithm Competition of March 2018.  
-I solved this problem using the C++ language. [Problem link](https://www.hackerrank.com/challenges/diagonal-difference/problem)
+I solved this problem using the C++ language. [Problem link](https://www.hackerrank.com/challenges/diagonal-difference/problem)  
 As of March 28<sup>th</sup>, 2018:
 - [X] Find a first working solution on the sample input
 - [X] Submit first solution. Got correct
