@@ -15,9 +15,9 @@ As of March 28<sup>th</sup>, 2018 :
 
 ### Journey to the moon
 The solution I tried for solving this problem will be found in the journey to the directory.
-The goal is to find the number of possible pair of astronauts from two different countries.  
-This challenge was part of the Criteo Algorithm Competition of March 2018. [Problem link](https://www.hackerrank.com/challenges/journey-to-the-moon).  
-As of April 15<sup>th</sup>, 2017:
+The goal is to find the number of possible pair of astronauts from two different countries. This challenge was part of the Criteo Algorithm Competition of March 2018.  
+I solved this problem with the C++ and C languages [Problem link](https://www.hackerrank.com/challenges/journey-to-the-moon).  
+As of April 5<sup>th</sup>, 2018:
 - [X] Find a first working solution on the sample input
 - [X] Submit solution. Got a timeout on bigger testcases.
 - [X] Optimize solution and get correct answer. Challenge solved.

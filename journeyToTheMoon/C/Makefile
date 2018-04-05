@@ -1,16 +1,16 @@
-CC=g++
-CFLAGS=-W -Wall -std=c++14 -pedantic
+CC=gcc
+CFLAGS=-W -Wall -pedantic
 LDFLAGS=
-EXEC=
-SRC=$(wildcard *.cpp)
-OBJ=$(SRC:.cpp=.o)
+EXEC=main
+SRC=$(wildcard *.c)
+OBJ=$(SRC:.c=.o)
 
 all: $(EXEC)
 
 main: main.o
 	@$(CC) -o $@ $^ $(LDFLAGS)
 
-%.o : %.cpp
+%.o : %.c
 	$(CC) -o $@ -c $< $(CFLAGS)
 
 .PHONY: clean mrproper
@@ -18,5 +18,5 @@ main: main.o
 clean:
 	@rm -rf *.o
 
-mrproper:
+mrproper: clean
 	@rm -rf $(EXEC)
