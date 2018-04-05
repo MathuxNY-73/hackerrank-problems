@@ -15,11 +15,12 @@ As of March 28<sup>th</sup>, 2018 :
 
 ### Journey to the moon
 The solution I tried for solving this problem will be found in the journey to the directory.
-The goal is to find the number of possible pair of astronauts from two different countries. [Problem link](https://www.hackerrank.com/challenges/journey-to-the-moon).  
+The goal is to find the number of possible pair of astronauts from two different countries.  
+This challenge was part of the Criteo Algorithm Competition of March 2018. [Problem link](https://www.hackerrank.com/challenges/journey-to-the-moon).  
 As of April 15<sup>th</sup>, 2017:
 - [X] Find a first working solution on the sample input
 - [X] Submit solution. Got a timeout on bigger testcases.
-- [ ] Optimize solution and get correct answer. Challenge solved.
+- [X] Optimize solution and get correct answer. Challenge solved.
 
 ### Max-Min
 The solution I tried in order to solve this problem is contained in the minMax directory.
