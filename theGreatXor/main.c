@@ -9,37 +9,30 @@
 #include <string.h>
 
 char* readline();
-long findLimit(long);
+long makeMask(long);
 
 // Complete the theGreatXor function below.
 long theGreatXor(long x) {
-    long count = 0;
-    long limit = findLimit(x);
-    for(long i = 0 ; i < limit ; ++i)
-    {
-        long res = i ^ x;
-        if (res > x)
-        {
-            ++count;
-        }
-    }
-    return count;
+    long mask = makeMask(x);
+    return ~x & mask;
 }
 
-long findLimit(long x)
+long makeMask(long x)
 {
-    long l = 1;
-    for(;l <= x;)
+    long mask = LONG_MAX;
+    if(x == 0)
     {
-        long n = l << 1;
-        if(n > x && (x & l) != 0)
-        {
-            return l;
-        }
-        l = n;
+        return ~mask;
     }
 
-    return 0;
+    long l = 1;
+    int i = 0;
+    for(;l <= x; ++i)
+    {
+        l = l << 1;
+    }
+
+    return ~(mask << i);
 }
 
 int main()

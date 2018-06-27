@@ -125,9 +125,11 @@ This is a Bit Manipulation problem from hackerrank. The goal is to find the numb
   - a XOR x > x
   - 0 < a < x
 where x is given as an input.  
+
 I solved this problem using the C language. [Problem link](https://www.hackerrank.com/challenges/the-great-xor/problem)  
 As of June 27<sup>th</sup>, 2018:
 - [X] Find a first working solution on the sample input
 - [X] Submit first solution. Got timeout on bigger inputs
-- [ ] Find a second solution
-- [ ] Problem solved
+- [X] Find a second solution on the sample input
+- [X] Submit second solution. Got correct
+- [X] Problem solved
