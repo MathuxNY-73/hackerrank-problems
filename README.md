@@ -103,7 +103,7 @@ As of February 23<sup>rd</sup>, 2018:
 - [ ] Find a third solution using first method working on the sample input
 
 ### Diagonal Difference
-This is warmup algorithm problem form hackerrank. The goal is to compute the absolute difference between the two diagonals of a square matrix.  
+This is warmup algorithm problem from hackerrank. The goal is to compute the absolute difference between the two diagonals of a square matrix.  
 This challenge was part of the Criteo Algorithm Competition of March 2018.  
 I solved this problem using the C++ language. [Problem link](https://www.hackerrank.com/challenges/diagonal-difference/problem)  
 As of March 28<sup>th</sup>, 2018:
@@ -119,3 +119,15 @@ As of March 28<sup>th</sup>, 2018:
 
 ### Friends (BattleDev March 2018)
 [Problem link](https://www.isograd.com/FR/solutionconcours.php#)
+
+### The Great XOR
+This is a Bit Manipulation problem from hackerrank. The goal is to find the number of long integer a satisfying the following:
+  - a XOR x > x
+  - 0 < a < x
+where x is given as an input.  
+I solved this problem using the C language. [Problem link](https://www.hackerrank.com/challenges/the-great-xor/problem)  
+As of June 27<sup>th</sup>, 2018:
+- [X] Find a first working solution on the sample input
+- [X] Submit first solution. Got timeout on bigger inputs
+- [ ] Find a second solution
+- [ ] Problem solved
