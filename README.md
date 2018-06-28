@@ -133,3 +133,12 @@ As of June 27<sup>th</sup>, 2018:
 - [X] Find a second solution on the sample input
 - [X] Submit second solution. Got correct
 - [X] Problem solved
+
+### Find the running Median
+This is a heap data structure challenge from hackerrank. The goal is to find the running median of an 
+array by considering one more number at each step.  
+I solved this problem using the C++ language. [Problem link](https://www.hackerrank.com/challenges/find-the-running-median/problem)  
+As of June 28<sup>th</sup>, 2018:
+- [X] Find a first working solution on the sample input
+- [X] Submit first solution. Got correct
+- [X] Problem solved
