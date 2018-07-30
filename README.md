@@ -147,6 +147,6 @@ As of June 28<sup>th</sup>, 2018:
 This is a dynamic programming challenge from hackerrank. The goal is to determine the number of ways to make change for a given number of units using any number of coins.  
 I try to solve this problem using the C language. [Problem link](https://www.hackerrank.com/challenges/coin-change/problem)  
 As of July 2<sup>nd</sup>, 2018:
-- [ ] Find a first working solution on the sample input
-- [ ] Submit first solution. Got correct
+- [X] Find a first working solution on the sample input
+- [X] Submit first solution. Got wrong on larger sets
 - [ ] Problem solved
