@@ -11,84 +11,25 @@
 char* readline();
 char** split_string(char*);
 
-long getWaysMemory(long, int, long*, long*);
-void initWays(long, long*);
-
 // Complete the getWays function below.
 long getWays(long n, int c_count, long* c) {
-    long* ways = malloc((n + 1) * sizeof(long));
-    initWays(n + 1, ways);
+    long ways[n+1][c_count];
 
-    return getWaysMemory(n, c_count, c, ways);
-}
-
-void initWays(long size, long* ways)
-{
-    for(int i = 0 ; i < size ; ++i)
+    for(int i = 0 ; i < c_count ; ++i)
     {
-        ways[i] = -1;
-        printf("Hello World 6: ways[%d] = %ld\n", i, ways[i]);
+        ways[0][i] = 1;
     }
 
-    ways[0] = 0;
-}
-
-bool isIn(long n, int size, long* a)
-{
-    for (int i = 0 ; i < size; ++i)
+    for(int i = 1 ; i <= n ; ++i)
     {
-        if(a[i] == n)
+        for(long j = 0 ; j < c_count ; ++j)
         {
-            return true;
+            ways[i][j] = ((i - c[j]) >= 0 ? ways[i - c[j]][j] : 0) +
+                (j > 0 ? ways[i][j-1] : 0);
         }
     }
-    return false;
-}
 
-long getWaysMemory(long n, int c_count, long* c, long* ways)
-{
-    printf("Hello World 0: %ld, ways[%ld] = %ld\n", n, n, ways[n]);
-    if (ways[n] <= -1)
-    {
-        ways[n] = 0;
-        long* studied = malloc(c_count * 2 * sizeof(long));
-        for(int i = 0 ; i < c_count * 2 ; ++i)
-        {
-            studied[i] = -99999999;
-        }
-
-        for(int i = 0 ; i < c_count ; ++i)
-        {
-            printf("Hello World 5: %ld\n", c[i]);
-            long diff = n - c[i];
-            if(isIn(diff, c_count * 2, studied))
-            {
-                continue;
-            }
-
-            studied[i * 2] = c[i];
-            studied[i * 2 + 1] = diff;
-
-            if(diff == 0)
-            {
-                ++ways[n];
-                continue;
-            }
-
-            if(diff < 0)
-            {
-                continue;
-            }
-
-            long w = getWaysMemory(diff, c_count, c, ways);
-            if(w > 0)
-            {
-                ways[n] += w;
-            }
-        }
-    }
-    printf("Hello World 7: %ld, ways[%ld] = %ld\n", n, n, ways[n]);
-    return ways[n];
+    return ways[n][c_count-1];
 }
 
 int main()
@@ -96,7 +37,6 @@ int main()
     FILE* fptr = stdout;
 
     char** nm = split_string(readline());
-    printf("Hello World 2\n");
 
     char* n_endptr;
     char* n_str = nm[0];
@@ -114,8 +54,6 @@ int main()
 
     long* c = malloc(m * sizeof(long));
 
-    printf("Hello World 3\n");
-
     for (int i = 0; i < m; i++) {
         char* c_item_endptr;
         char* c_item_str = *(c_temp + i);
@@ -127,7 +65,6 @@ int main()
     }
 
     int c_count = m;
-    printf("Hello World 1\n");
 
     // Print the number of ways of making change for 'n' units using coins having the values given by 'c'
 

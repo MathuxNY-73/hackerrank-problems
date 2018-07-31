@@ -149,4 +149,6 @@ I try to solve this problem using the C language. [Problem link](https://www.hac
 As of July 2<sup>nd</sup>, 2018:
 - [X] Find a first working solution on the sample input
 - [X] Submit first solution. Got wrong on larger sets
+- [X] Find a second working solution on the sample input
+- [X] Submit second solution. Got runtime error on test set #10
 - [ ] Problem solved
