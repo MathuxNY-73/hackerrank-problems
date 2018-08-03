@@ -13,23 +13,21 @@ char** split_string(char*);
 
 // Complete the getWays function below.
 long getWays(long n, int c_count, long* c) {
-    long ways[n+1][c_count];
+    long ways[n+1];
+
+    memset(ways, 0, sizeof(ways));
+
+    ways[0] = 1;
 
     for(int i = 0 ; i < c_count ; ++i)
     {
-        ways[0][i] = 1;
-    }
-
-    for(int i = 1 ; i <= n ; ++i)
-    {
-        for(long j = 0 ; j < c_count ; ++j)
+        for(long j = c[i] ; j <= n ; ++j)
         {
-            ways[i][j] = ((i - c[j]) >= 0 ? ways[i - c[j]][j] : 0) +
-                (j > 0 ? ways[i][j-1] : 0);
+            ways[j] += ways[j - c[i]];
         }
     }
 
-    return ways[n][c_count-1];
+    return ways[n];
 }
 
 int main()

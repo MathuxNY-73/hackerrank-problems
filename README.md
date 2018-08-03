@@ -151,4 +151,6 @@ As of July 2<sup>nd</sup>, 2018:
 - [X] Submit first solution. Got wrong on larger sets
 - [X] Find a second working solution on the sample input
 - [X] Submit second solution. Got runtime error on test set #10
+- [X] Find a third working solution on the sample input
+- [X] Submit third solution. Got runtime error on test set #10
 - [ ] Problem solved
