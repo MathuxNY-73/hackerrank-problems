@@ -61,6 +61,8 @@ As of August<sup>18th</sup>, 2018:
 - [X] Submit solution. Got right answer
 - [X] Find a second working solution on the sample input
 - [X] Submit solution. Got Timeout
+- [X] Find a third working solution on the sample input
+- [X] Submit solution. Problem solution
 
 ### Palindrome Index
 This is a string algorithm problem from hackerrank. The goal is to find if there exists a character in the string that, when removed renders

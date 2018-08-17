@@ -9,17 +9,18 @@
 #define INF 9999999999
 
 long giveCandies(int, const int[]);
-void printArray(int, const int[]);
+int compareTuple( const void* , const void* );
 
 typedef struct node {
     int i;
     struct node* n;
 } node;
 
-typedef struct linkedL {
-    node* h;
-    node* t;
-} linkedL;
+typedef struct tuple {
+    int idx;
+    int value;
+} tuple;
+
 
 int main() {
     int n; 
@@ -36,13 +37,16 @@ int main() {
 
 long giveCandies(int ar_size, const int ar[])
 {
-    int* candies = malloc(sizeof(int) * ar_size);
-    node** p = malloc(sizeof(node*) * ar_size);
+    int candies[ar_size];
+    node* c[ar_size];
+    tuple art[ar_size];
     long res = 0;
 
     for(int i = 0; i < ar_size ; ++i)
     {
-        p[i] = NULL;
+        c[i] = NULL;
+        art[i].idx = i;
+        art[i].value = ar[i];
         candies[i] = 1;
     }
 
@@ -50,92 +54,65 @@ long giveCandies(int ar_size, const int ar[])
     {
         if(i < ar_size - 1)
         {
-            if(ar[i] < ar[i+1])
+            if(ar[i] > ar[i+1])
             {
                 node* n = malloc(sizeof(node));
                 n->i = i+1;
-                n->n = p[i];
-                p[i] = n;
+                n->n = c[i];
+                c[i] = n;
             }
-            else if(ar[i] > ar[i+1])
+            else if(ar[i] < ar[i+1])
             {
                 node* n = malloc(sizeof(node));
                 n->i = i;
-                n->n = p[i+1];
-                p[i+1] = n;
+                n->n = c[i+1];
+                c[i+1] = n;
             }
         }
     }
+
+    qsort(art, ar_size, sizeof(tuple), compareTuple);
 
     for(int i = 0 ; i < ar_size ; ++i)
     {
-        linkedL q;
-        node* qn = malloc(sizeof(node));
-        qn->i = i;
-        qn->n = NULL;
-        q.h = qn;
-
-        while(q.h != NULL)
+        if(c[art[i].idx] != NULL)
         {
-            node* cqn = q.h;
-            int ci = cqn->i;
-
-            q.h = cqn->n;
-            free(cqn);
-            if (q.h == NULL) q.t = NULL;
-
-            node* pi = p[ci];
-            while(pi != NULL)
+            int max = 1;
+            for(node* cur = c[art[i].idx] ; cur != NULL ; cur = cur->n)
             {
-                if(candies[pi->i] <= candies[ci])
+                if(candies[cur->i] > max)
                 {
-                    ++candies[pi->i];
-                    node* qn = malloc(sizeof(node));
-                    qn->i = pi->i;
-                    if(q.t == NULL)
-                    {
-                        qn->n = NULL;
-                        q.h = qn;
-                        q.t = qn; 
-                    }
-                    else
-                    {
-                        q.t->n = qn;
-                        q.t = qn;
-                    }
+                    max = candies[cur->i];
                 }
-                pi = pi->n;
             }
+            candies[art[i].idx] = max + 1;
         }
     }
-
-    //printArray(ar_size, candies);
 
     for(int i = 0 ; i < ar_size ; ++i)
     {
         res += candies[i];
     }
 
-    // Free stuff
     for(int i = 0 ; i < ar_size ; ++i)
     {
-        node* c = p[i];
-        while(c != NULL)
+        for(node* cur = c[i] ; cur != NULL ;)
         {
-            node* f = c;
-            c = f->n;
-            free(f);
+            node* tmp = cur->n;
+            free(cur);
+            cur = tmp;
         }
     }
 
     return res;
 }
 
-void printArray(int s, const int ar[])
+int compareTuple( const void* a, const void* b)
 {
-    for(int i = 0 ; i < s ; ++i)
-    {
-        printf("%d ", ar[i]);
-    }
-    puts("");
+    tuple ta = * ( (tuple*) a );
+    tuple tb = * ( (tuple*) b );
+
+     if ( ta.value == tb.value ) return ta.idx - tb.idx;
+     else if ( ta.value < tb.value ) return -1;
+     else return 1;
 }
