@@ -55,10 +55,12 @@ As of December 31<sup>st</sup>, 2017:
 ### Candies
 This is a dynamic programming problem from hackerrank. The goal is to give out candies to a class of students who are attributed
 a grade. Candy distribution needs to take the grade into account.
-I solved this problem in C++ language. [Problem link](https://www.hackerrank.com/challenges/candies/problem)  
-As of December 31<sup>st</sup>, 2017:
+I solved this problem in C++ and C language. [Problem link](https://www.hackerrank.com/challenges/candies/problem)  
+As of August<sup>18th</sup>, 2018:
 - [X] Find a first working solution on the sample input
 - [X] Submit solution. Got right answer
+- [X] Find a second working solution on the sample input
+- [X] Submit solution. Got Timeout
 
 ### Palindrome Index
 This is a string algorithm problem from hackerrank. The goal is to find if there exists a character in the string that, when removed renders
@@ -146,7 +148,7 @@ As of June 28<sup>th</sup>, 2018:
 ### The Coin Change Problem
 This is a dynamic programming challenge from hackerrank. The goal is to determine the number of ways to make change for a given number of units using any number of coins.  
 I try to solve this problem using the C language. [Problem link](https://www.hackerrank.com/challenges/coin-change/problem)  
-As of July 2<sup>nd</sup>, 2018:
+As of August 3<sup>rd</sup>, 2018:
 - [X] Find a first working solution on the sample input
 - [X] Submit first solution. Got wrong on larger sets
 - [X] Find a second working solution on the sample input
