@@ -1,6 +1,72 @@
 # hackerrank-problems
 This repository contains all problems I solved from the hacker rank website
 
+## Bit Manipulation
+<details>
+<summary>The following subsection contains description of all problems relating to bit manipulation</summary>
+
+### The Great XOR
+This is a Bit Manipulation problem from hackerrank. The goal is to find the number of long integer a satisfying the following:
+  - a XOR x > x
+  - 0 < a < x
+where x is given as an input.  
+
+I solved this problem using the C language. [Problem link](https://www.hackerrank.com/challenges/the-great-xor/problem)  
+As of June 27<sup>th</sup>, 2018:
+- [X] Find a first working solution on the sample input
+- [X] Submit first solution. Got timeout on bigger inputs
+- [X] Find a second solution on the sample input
+- [X] Submit second solution. Got correct
+- [X] Problem solved
+
+### Xor Sequence
+This is a Bit Manipulation problem from hackerrank. [Problem link](https://www.hackerrank.com/challenges/xor-se/problem)  
+As of August 18<sup>th</sup>, 2018:
+- [ ] Find a first working solution on the sample input
+- [ ] Submit first solution.
+
+</details>
+
+## Dynamic Programming
+<details>
+<summary>The following subsection contains description of all problems relating to dynamic programming</summary>
+
+### Candies
+This is a dynamic programming problem from hackerrank. The goal is to give out candies to a class of students who are attributed
+a grade. Candy distribution needs to take the grade into account.
+I solved this problem in C++ and C language. [Problem link](https://www.hackerrank.com/challenges/candies/problem)  
+As of August<sup>18th</sup>, 2018:
+- [X] Find a first working solution on the sample input
+- [X] Submit solution. Got right answer
+- [X] Find a second working solution on the sample input
+- [X] Submit solution. Got Timeout
+- [X] Find a third working solution on the sample input
+- [X] Submit solution. Problem solution
+
+### Mandragora Forest
+This is a dynamic programming algorithm problem from hackerrank. The goal is to find the best combination of actions to do (battle or eat) to win the maximum number of XP points.  
+This challenge was part of the Criteo Algorithm Competition of February 2018.  
+I solved this problem using the C language. [Problem link](https://www.hackerrank.com/challenges/mandragora/problem)  
+As of February 23<sup>rd</sup>, 2018:
+- [X] Find a first working solution on the sample input in C++
+- [X] Submit first solution. Got a timeout on big sets as I do a DFS on the combination tree
+- [X] Find a second working solution on the sample input in C
+- [X] Submit second solution
+- [X] Problem solved
+
+### The Coin Change Problem
+This is a dynamic programming challenge from hackerrank. The goal is to determine the number of ways to make change for a given number of units using any number of coins.  
+I try to solve this problem using the C language. [Problem link](https://www.hackerrank.com/challenges/coin-change/problem)  
+As of August 3<sup>rd</sup>, 2018:
+- [X] Find a first working solution on the sample input
+- [X] Submit first solution. Got wrong on larger sets
+- [X] Find a second working solution on the sample input
+- [X] Submit second solution. Got runtime error on test set #10
+- [X] Find a third working solution on the sample input
+- [X] Submit third solution. Got runtime error on test set #10
+- [ ] Problem solved
+</details>
+
 ### The Snakes and Ladder problem
 The solution I tried for solving this problem is contained in the shootsAndLadder directory.
 The goal was to find the smallest number of die rolls to get to the 100<sup>th</sup> square. [Problem link](https://www.hackerrank.com/challenges/the-quickest-way-up).  
@@ -51,18 +117,6 @@ I solved this problem in C language. [Problem link](https://www.hackerrank.com/c
 As of December 31<sup>st</sup>, 2017:
 - [X] Find a first working solution on the sample input
 - [X] Submit solution. Got right answer
-
-### Candies
-This is a dynamic programming problem from hackerrank. The goal is to give out candies to a class of students who are attributed
-a grade. Candy distribution needs to take the grade into account.
-I solved this problem in C++ and C language. [Problem link](https://www.hackerrank.com/challenges/candies/problem)  
-As of August<sup>18th</sup>, 2018:
-- [X] Find a first working solution on the sample input
-- [X] Submit solution. Got right answer
-- [X] Find a second working solution on the sample input
-- [X] Submit solution. Got Timeout
-- [X] Find a third working solution on the sample input
-- [X] Submit solution. Problem solution
 
 ### Palindrome Index
 This is a string algorithm problem from hackerrank. The goal is to find if there exists a character in the string that, when removed renders
@@ -124,20 +178,6 @@ As of March 28<sup>th</sup>, 2018:
 ### Friends (BattleDev March 2018)
 [Problem link](https://www.isograd.com/FR/solutionconcours.php#)
 
-### The Great XOR
-This is a Bit Manipulation problem from hackerrank. The goal is to find the number of long integer a satisfying the following:
-  - a XOR x > x
-  - 0 < a < x
-where x is given as an input.  
-
-I solved this problem using the C language. [Problem link](https://www.hackerrank.com/challenges/the-great-xor/problem)  
-As of June 27<sup>th</sup>, 2018:
-- [X] Find a first working solution on the sample input
-- [X] Submit first solution. Got timeout on bigger inputs
-- [X] Find a second solution on the sample input
-- [X] Submit second solution. Got correct
-- [X] Problem solved
-
 ### Find the running Median
 This is a heap data structure challenge from hackerrank. The goal is to find the running median of an 
 array by considering one more number at each step.  
@@ -146,15 +186,3 @@ As of June 28<sup>th</sup>, 2018:
 - [X] Find a first working solution on the sample input
 - [X] Submit first solution. Got correct
 - [X] Problem solved
-
-### The Coin Change Problem
-This is a dynamic programming challenge from hackerrank. The goal is to determine the number of ways to make change for a given number of units using any number of coins.  
-I try to solve this problem using the C language. [Problem link](https://www.hackerrank.com/challenges/coin-change/problem)  
-As of August 3<sup>rd</sup>, 2018:
-- [X] Find a first working solution on the sample input
-- [X] Submit first solution. Got wrong on larger sets
-- [X] Find a second working solution on the sample input
-- [X] Submit second solution. Got runtime error on test set #10
-- [X] Find a third working solution on the sample input
-- [X] Submit third solution. Got runtime error on test set #10
-- [ ] Problem solved
