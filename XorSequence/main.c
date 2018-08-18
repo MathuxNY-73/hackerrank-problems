@@ -13,8 +13,19 @@ char** split_string(char*);
 
 // Complete the xorSequence function below.
 long xorSequence(long l, long r) {
-
-
+    long res = 0;
+    for(long i = l ; i <= r; ++i)
+    {
+        if(i % 2 == 0)
+        {
+            res ^= i % 4 == 0 ? i : i + 1; 
+        }
+        else if(i % 4 == 1)
+        {
+            res ^= (long)1;
+        }
+    }
+    return res;
 }
 
 int main()

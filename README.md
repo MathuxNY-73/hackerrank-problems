@@ -22,8 +22,9 @@ As of June 27<sup>th</sup>, 2018:
 ### Xor Sequence
 This is a Bit Manipulation problem from hackerrank. [Problem link](https://www.hackerrank.com/challenges/xor-se/problem)  
 As of August 18<sup>th</sup>, 2018:
-- [ ] Find a first working solution on the sample input
-- [ ] Submit first solution.
+- [X] Find a first working solution on the sample input
+- [X] Submit first solution. Got timeout on bigger inputs
+- [ ] Find a second working solution on sample input
 
 </details>
 
