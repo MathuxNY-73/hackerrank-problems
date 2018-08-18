@@ -67,8 +67,12 @@ As of August 3<sup>rd</sup>, 2018:
 - [ ] Problem solved
 </details>
 
+## Graph Theory
+<details>
+<summary>The following subsection contains description of all problems relating to graph theory</summary>
+
 ### The Snakes and Ladder problem
-The solution I tried for solving this problem is contained in the shootsAndLadder directory.
+This is a graph theory challenge from hackerrank. The solution I tried for solving this problem is contained in the shootsAndLadder directory.  
 The goal was to find the smallest number of die rolls to get to the 100<sup>th</sup> square. [Problem link](https://www.hackerrank.com/challenges/the-quickest-way-up).  
 As this problem has chosen as part of the Criteo Algorithm Competition of March 2018, I had to solve it again from scratch. Solutions have been separated into 2 folders.  
 As of March 28<sup>th</sup>, 2018 :
@@ -80,13 +84,16 @@ As of March 28<sup>th</sup>, 2018 :
 - [X] Challenge solved with solution 2
 
 ### Journey to the moon
-The solution I tried for solving this problem will be found in the journey to the directory.
+This is a graph theory challenge from hackerrank. The solution I tried for solving this problem will be found in the journey to the moon directory.  
 The goal is to find the number of possible pair of astronauts from two different countries. This challenge was part of the Criteo Algorithm Competition of March 2018.  
 I solved this problem with the C++ and C languages [Problem link](https://www.hackerrank.com/challenges/journey-to-the-moon).  
 As of April 5<sup>th</sup>, 2018:
 - [X] Find a first working solution on the sample input
 - [X] Submit solution. Got a timeout on bigger testcases.
 - [X] Optimize solution and get correct answer. Challenge solved.
+</details>
+
+## Others
 
 ### Max-Min
 The solution I tried in order to solve this problem is contained in the minMax directory.
