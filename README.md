@@ -24,7 +24,9 @@ This is a Bit Manipulation problem from hackerrank. [Problem link](https://www.h
 As of August 18<sup>th</sup>, 2018:
 - [X] Find a first working solution on the sample input
 - [X] Submit first solution. Got timeout on bigger inputs
-- [ ] Find a second working solution on sample input
+- [X] Find a second working solution on sample input
+- [X] Submit second solution. Got correct
+- [X] Problem solved
 
 </details>
 

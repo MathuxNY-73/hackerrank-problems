@@ -14,17 +14,34 @@ char** split_string(char*);
 // Complete the xorSequence function below.
 long xorSequence(long l, long r) {
     long res = 0;
-    for(long i = l ; i <= r; ++i)
+
+    int r_mod = r % 4;
+    int l_mod = l % 4;
+
+    long l_d = ceil(l / 4.0l);
+    long r_d = floor(r / 4.0l);
+
+    long d = labs(r_d - l_d);
+
+    if(d % 2 == 1)
     {
-        if(i % 2 == 0)
-        {
-            res ^= i % 4 == 0 ? i : i + 1; 
-        }
-        else if(i % 4 == 1)
-        {
-            res ^= (long)1;
-        }
+        res = 2;
     }
+
+    if(r_mod == 0 || r_mod == 1)
+    {
+        res ^= r;
+    }
+    else if(r_mod == 2 || r_mod == 3)
+    {
+        res ^= 2;
+    }
+
+    if(l_mod == 1 || l_mod == 2)
+    {
+        res ^= (l + 1);
+    }
+
     return res;
 }
 
