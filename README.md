@@ -102,8 +102,16 @@ As of April 5<sup>th</sup>, 2018:
 
 ### Insert a node at a specific position in a linked list
 This is a data structure challenge from hackerrank. 
-The goal was to find the smallest number of die rolls to get to the 100<sup>th</sup> square. [Problem link](https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem).  
+The goal was to insert an item in a single linked list. [Problem link](https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem).  
 As of August 19<sup>th</sup>, 2018 :
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got right
+- [X] Challenge solved
+
+### Print in Reverse
+This is a data structure challenge from hackerrank. 
+The goal was to print a single linked list in reverse. [Problem link](https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list-in-reverse/problem).  
+As of August 20<sup>th</sup>, 2018 :
 - [X] Find a first working solution on the sample input
 - [X] Submitted solution. Got right
 - [X] Challenge solved
