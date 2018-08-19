@@ -96,6 +96,19 @@ As of April 5<sup>th</sup>, 2018:
 - [X] Optimize solution and get correct answer. Challenge solved.
 </details>
 
+## Data Structure
+<details>
+<summary>The following subsection contains description of all problems relating to data structure</summary>
+
+### Insert a node at a specific position in a linked list
+This is a data structure challenge from hackerrank. 
+The goal was to find the smallest number of die rolls to get to the 100<sup>th</sup> square. [Problem link](https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem).  
+As of August 19<sup>th</sup>, 2018 :
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got right
+- [X] Challenge solved
+</details>
+
 ## Others
 
 ### Max-Min
