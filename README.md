@@ -122,6 +122,19 @@ As of August 20<sup>th</sup>, 2018 :
 - [X] Challenge solved
 </details>
 
+## Search
+<details>
+<summary>The following subsection contains description of all problems relating to data structure</summary>
+
+### Sherlock and Array
+This is a search challenge from hackerrank. The goal is to find an item in a given array such that the sum of all integers on the right equals that of the integers on the left of the item. This challenge was part of the Criteo Algorithm Competition of January 2018.  
+I solved this problem with the C languages [Problem link](https://www.hackerrank.com/challenges/sherlock-and-array/problem)  
+As of August 20<sup>th</sup>, 2018 :
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got right
+- [X] Challenge solved
+</details>
+
 ## Others
 
 ### Max-Min
