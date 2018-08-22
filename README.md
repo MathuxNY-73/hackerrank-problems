@@ -120,6 +120,13 @@ As of August 20<sup>th</sup>, 2018 :
 - [X] Find a first working solution on the sample input
 - [X] Submitted solution. Got right
 - [X] Challenge solved
+
+### Reverse a doubly linked list
+This is a data structure challenge from hackerrank. This challenge is about the double linked list data structure. The goal was to reverse a double linked list [Problem link](https://www.hackerrank.com/challenges/reverse-a-doubly-linked-list/problem).  
+As of August 22<sup>nd</sup>, 2018 :
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got right
+- [X] Challenge solved
 </details>
 
 ## Search
