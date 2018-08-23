@@ -127,6 +127,13 @@ As of August 22<sup>nd</sup>, 2018 :
 - [X] Find a first working solution on the sample input
 - [X] Submitted solution. Got right
 - [X] Challenge solved
+
+### Compare two linked lists
+This is a data structure challenge from hackerrank. This challenge is about the single linked list data structure. The goal was to compare two single linked list [Problem link](https://www.hackerrank.com/challenges/compare-two-linked-lists/problem).  
+As of August 23<sup>rd</sup>, 2018 :
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got right
+- [X] Challenge solved
 </details>
 
 ## Search
