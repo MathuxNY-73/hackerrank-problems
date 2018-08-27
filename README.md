@@ -137,10 +137,12 @@ As of August 23<sup>rd</sup>, 2018 :
 
 ### Sherlock and Anagrams
 This is a data structure challenge from hackerrank. This challenge is about the hash table data structure. The goal is to find the number of anagramic pairs of subtrings given a string [Problem link](https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem).  
-As of August 27<sup>rd</sup>, 2018 :
+As of August 27<sup>th</sup>, 2018 :
 - [X] Find a first working solution on the sample input
-- [X] Submitted solution. Got timeout on TestCase#4
-- [ ] Challenge solved
+- [X] Submit solution. Got timeout on TestCase#4
+- [X] Find a second working solution on the sample input
+- [X] Submit solution. Got correct
+- [X] Challenge solved
 </details>
 
 ## Search
