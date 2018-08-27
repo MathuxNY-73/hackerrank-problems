@@ -28,39 +28,38 @@
 
 using namespace std;
 
+long unsigned myHash(const array<uint8_t, 26>& s) {
+    long unsigned t=73,myHash=0;
 
-struct MyHash {
-    long unsigned int operator()(const array<uint8_t, 26>& s) const {
-        long unsigned int myHash = 73;
-
-        for(auto i = 0 ; i < s.size() ; ++i)
-        {
-            myHash ^= hash<uint8_t>{}(s[i] * i);
-        }
-
-        return myHash;
+    for(auto i = 0 ; i < s.size() ; ++i)
+    {
+        myHash += t*s[i]*('a' - i);
+        t=t*(long unsigned)1000003;
     }
-};
+    return myHash;
+}
 
 // Complete the sherlockAndAnagrams function below.
 int sherlockAndAnagrams(string s) {
 
     auto count = 0;
+    auto map = unordered_map<long long unsigned, int>();
 
-    for(auto i = 1; i <= s.size() ; ++i)
+    for(auto i = 0; i < s.size() ; ++i)
     {
-        auto map = unordered_map<string, int>();
-        for(auto j = 0 ; j <= s.size() - i; ++j)
-        {
-            auto sub_s = s.substr(j, i);
-            sort(sub_s.begin(), sub_s.end());
-            ++map[sub_s];
-        }
+        auto frequence = array<uint8_t, 26>();
+        fill(frequence.begin(), frequence.end(), 0);
 
-        for (auto it = map.cbegin(); it != map.cend() ; ++it)
+        for(auto j = i ; j < s.size() ; ++j)
         {
-            count += (it->second * (it->second - 1)) / 2;
+            ++frequence[s[j] - 'a'];
+            ++map[myHash(frequence)];
         }
+    }
+
+    for (auto it = map.cbegin(); it != map.cend() ; ++it)
+    {
+        count += (it->second * (it->second - 1)) / 2;
     }
 
     return count;
