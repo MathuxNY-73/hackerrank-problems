@@ -30,8 +30,8 @@ using namespace std;
 
 
 struct MyHash {
-    size_t operator()(const array<uint8_t, 26>& s) const {
-        size_t myHash = 73;
+    long unsigned int operator()(const array<uint8_t, 26>& s) const {
+        long unsigned int myHash = 73;
 
         for(auto i = 0 ; i < s.size() ; ++i)
         {
@@ -42,22 +42,6 @@ struct MyHash {
     }
 };
 
-array<uint8_t, 26> generateRep(string s) {
-    auto sub_array = array<uint8_t, 26>();
-
-    for(auto i = 0; i < sub_array.size() ; ++i)
-    {
-        sub_array[i] = 0;
-    }
-
-    for(auto i = 0; i < s.size() ; ++i)
-    {
-        ++sub_array[s[i] - 'a'];
-    }
-
-    return sub_array;
-}
-
 // Complete the sherlockAndAnagrams function below.
 int sherlockAndAnagrams(string s) {
 
@@ -65,55 +49,18 @@ int sherlockAndAnagrams(string s) {
 
     for(auto i = 1; i <= s.size() ; ++i)
     {
-        auto map = unordered_map<array<uint8_t, 26>, int, MyHash>();
+        auto map = unordered_map<string, int>();
         for(auto j = 0 ; j <= s.size() - i; ++j)
         {
             auto sub_s = s.substr(j, i);
-            auto sub_array = generateRep(sub_s);
-
-            if(map.find(sub_array) != map.cend())
-            {
-                //cout << "sub_s=" << sub_s << endl;
-                ++map[sub_array];
-            }
-            else
-            {
-                map.insert({sub_array, 1});
-            }
+            sort(sub_s.begin(), sub_s.end());
+            ++map[sub_s];
         }
 
         for (auto it = map.cbegin(); it != map.cend() ; ++it)
         {
             count += (it->second * (it->second - 1)) / 2;
         }
-    }
-
-    return count;
-}
-
-int sherlockAndAnagrams(string s) {
-
-    auto count = 0;
-    auto map = unordered_map<char, int>();
-
-    for(auto i = 1; i <= s.size() ; ++i)
-    {
-
-        if(map.find(s[i]) != map.cend())
-        {
-            //cout << "sub_s=" << sub_s << endl;
-            ++map[s[i]];
-        }
-        else
-        {
-            map.insert({s[i], 1});
-        }
-    }
-
-
-    for (auto it = map.cbegin(); it != map.cend() ; ++it)
-    {
-        count += (it->second * (it->second - 1)) / 2;
     }
 
     return count;

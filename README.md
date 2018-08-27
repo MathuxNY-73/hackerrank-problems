@@ -142,6 +142,8 @@ As of August 27<sup>th</sup>, 2018 :
 - [X] Submit solution. Got timeout on TestCase#4
 - [X] Find a second working solution on the sample input
 - [X] Submit solution. Got correct
+- [X] Find a third working solution on the sample input
+- [X] Submit solution. Got correct
 - [X] Challenge solved
 </details>
 
