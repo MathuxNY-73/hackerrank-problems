@@ -153,6 +153,8 @@ This is a data structure challenge from hackerrank. This challenge is about the 
 I solved this problem using C++ language. As of August 28<sup>th</sup>, 2018 :
 - [X] Find a first working solution on the sample input
 - [X] Submit solution. Got errors on 2 test cases
+- [X] Find a second working solution on the sample input
+- [X] Submit solution. Got errors on 2 test cases
 - [ ] Challenge solved
 </details>
 

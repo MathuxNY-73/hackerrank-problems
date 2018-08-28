@@ -34,41 +34,70 @@ string ltrim(const string &);
 string rtrim(const string &);
 vector<string> split(const string &);
 
+struct MyGtPred {
+    int main;
+    
+  bool operator()(const int& a) const {
+      return a > main;
+  }  
+
+    MyGtPred(int m): main(m) {}
+};
+
+struct MyLtPred {
+    int main;
+    
+  bool operator()(const int& a) const {
+      return a < main;
+  }  
+
+    MyLtPred(int m): main(m) {}
+};
+
 // Complete the countTriplets function below.
 long countTriplets(vector<long> arr, long r) {
-    auto t = map<long, long>();
+    auto t = map<long, vector<int>>();
     long result = 0;
     for(auto i = 0 ; i < arr.size() ; ++i)
     {
         if(t.find(arr[i]) == t.cend())
         {
-            t.insert({arr[i], 0});   
+            t.insert({arr[i], vector<int>()});   
         }
-        ++t[arr[i]];
+        t[arr[i]].push_back(i);
     }
     
     for(auto it = t.cbegin() ; it != t.cend() ; ++it)
     {
-        long cnt = 0l;
-        long res = 1l;
+        auto cnt = 0;
         auto itt = it;
         
         if(r == 1)
         {
-            cnt = it->second;
-            result += cnt >= 3 ? cnt*(cnt-1)*(cnt-2) / 6l : 0;
+            long idx_cnt = it->second.size();
+            result += idx_cnt >= 3 ? idx_cnt*(idx_cnt-1)*(idx_cnt-2) / 6l : 0;
         }
         else
         {
+            auto idx_arr = array<vector<int>, 3>();
             while(itt != t.cend() && cnt < 3)
             {
+                idx_arr[cnt] = itt->second;
                 ++cnt;
-                res *= itt->second;
                 itt = t.find(itt->first * r);
             }
+
             if(cnt == 3)
             {
-                result += res;
+                auto hB_1 = find_if(idx_arr[1].crbegin(), idx_arr[1].crend(), MyLtPred(idx_arr[2].back()));
+                auto lB_1 = find_if(idx_arr[1].cbegin(), idx_arr[1].cend(), MyGtPred(idx_arr[0].front()));
+                auto lB_2 = find_if(idx_arr[2].cbegin(), idx_arr[2].cend(), MyGtPred(*lB_1));
+                auto hB_0 = find_if(idx_arr[0].crbegin(), idx_arr[0].crend(), MyLtPred(*hB_1));
+
+                //cout << "hB_0=" << *hB_0 << " lB_1=" << *lB_1 << " hB_1=" << *hB_1 << " lB_2=" << *lB_2 << endl;
+                //cout << "count_1=" << (idx_arr[0].crend() - hB_0) << " count_2=" << ((idx_arr[1].cend() - lB_1) - (hB_1 - idx_arr[1].crbegin())) << " count_3=" << (idx_arr[2].cend() - lB_2) << endl;
+                long poss = (idx_arr[0].crend() - hB_0) * ((idx_arr[1].cend() - lB_1) - (hB_1 - idx_arr[1].crbegin())) * (idx_arr[2].cend() - lB_2);
+                result += poss;
             }
         }
     }
