@@ -147,6 +147,13 @@ I solved this problem using C++ language. As of August 27<sup>th</sup>, 2018 :
 - [X] Find a fourth working solution on the sample input
 - [X] Submit solution. Got correct
 - [X] Challenge solved
+
+### Count Triplets
+This is a data structure challenge from hackerrank. This challenge is about the hash table data structure. The goal is to find the number of triplets of increasing indices such that the sequence of items at those indices form a geometric sequence [Problem link](https://www.hackerrank.com/challenges/count-triplets-1/problem).  
+I solved this problem using C++ language. As of August 28<sup>th</sup>, 2018 :
+- [X] Find a first working solution on the sample input
+- [X] Submit solution. Got errors on 2 test cases
+- [ ] Challenge solved
 </details>
 
 ## Search
