@@ -1,5 +1,5 @@
 CXX=g++
-CXFLAGS=-Wc++14-extensions -Wall -stdlib=libc++ -std=c++14 -pedantic
+CXFLAGS=-Wc++17-extensions -Wall -stdlib=libc++ -std=c++17 -pedantic
 LDFLAGS=
 EXEC=main
 SRC=$(wildcard *.cpp)

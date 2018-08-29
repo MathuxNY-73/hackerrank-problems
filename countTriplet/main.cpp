@@ -27,81 +27,46 @@
 #include <array>
 #include <functional>
 
-
 using namespace std;
 
 string ltrim(const string &);
 string rtrim(const string &);
 vector<string> split(const string &);
 
-struct MyGtPred {
-    int main;
-    
-  bool operator()(const int& a) const {
-      return a > main;
-  }  
-
-    MyGtPred(int m): main(m) {}
-};
-
-struct MyLtPred {
-    int main;
-    
-  bool operator()(const int& a) const {
-      return a < main;
-  }  
-
-    MyLtPred(int m): main(m) {}
-};
-
-// Complete the countTriplets function below.
 long countTriplets(vector<long> arr, long r) {
-    auto t = map<long, vector<int>>();
+    auto t = unordered_map<long, long>();
+    auto p = unordered_map<long, long>();
     long result = 0;
-    for(auto i = 0 ; i < arr.size() ; ++i)
+    for(int i = arr.size() - 1 ; i >= 0 ; --i)
     {
-        if(t.find(arr[i]) == t.cend())
+        auto cur = arr[i];
+        if(t.find(cur) == t.cend())
         {
-            t.insert({arr[i], vector<int>()});   
+            t.insert({cur, 0});
         }
-        t[arr[i]].push_back(i);
-    }
-    
-    for(auto it = t.cbegin() ; it != t.cend() ; ++it)
-    {
-        auto cnt = 0;
-        auto itt = it;
-        
-        if(r == 1)
-        {
-            long idx_cnt = it->second.size();
-            result += idx_cnt >= 3 ? idx_cnt*(idx_cnt-1)*(idx_cnt-2) / 6l : 0;
-        }
-        else
-        {
-            auto idx_arr = array<vector<int>, 3>();
-            while(itt != t.cend() && cnt < 3)
-            {
-                idx_arr[cnt] = itt->second;
-                ++cnt;
-                itt = t.find(itt->first * r);
-            }
 
-            if(cnt == 3)
-            {
-                auto hB_1 = find_if(idx_arr[1].crbegin(), idx_arr[1].crend(), MyLtPred(idx_arr[2].back()));
-                auto lB_1 = find_if(idx_arr[1].cbegin(), idx_arr[1].cend(), MyGtPred(idx_arr[0].front()));
-                auto lB_2 = find_if(idx_arr[2].cbegin(), idx_arr[2].cend(), MyGtPred(*lB_1));
-                auto hB_0 = find_if(idx_arr[0].crbegin(), idx_arr[0].crend(), MyLtPred(*hB_1));
-
-                //cout << "hB_0=" << *hB_0 << " lB_1=" << *lB_1 << " hB_1=" << *hB_1 << " lB_2=" << *lB_2 << endl;
-                //cout << "count_1=" << (idx_arr[0].crend() - hB_0) << " count_2=" << ((idx_arr[1].cend() - lB_1) - (hB_1 - idx_arr[1].crbegin())) << " count_3=" << (idx_arr[2].cend() - lB_2) << endl;
-                long poss = (idx_arr[0].crend() - hB_0) * ((idx_arr[1].cend() - lB_1) - (hB_1 - idx_arr[1].crbegin())) * (idx_arr[2].cend() - lB_2);
-                result += poss;
-            }
+        if(p.find(cur) == p.cend())
+        {
+            p.insert({cur, 0});
         }
+
+        auto r_1 = cur * r;
+        auto p_r1 = p.find(r_1);
+
+        if(p_r1 != p.cend())
+        {
+            result += p_r1->second;
+        }
+
+        auto t_r1 = t.find(r_1);
+        if(t_r1 != t.cend())
+        {
+            p[cur] += t[r_1];
+        }
+
+        ++t[cur];
     }
-    
+
     return result;
 }
 
@@ -145,7 +110,7 @@ string ltrim(const string &str) {
 
     s.erase(
         s.begin(),
-        find_if(s.begin(), s.end(), not1(ptr_fun<int, int>(isspace)))
+        find_if(s.begin(), s.end(), not_fn([] (const char& c) -> bool { return isspace(c);}))
     );
 
     return s;
@@ -155,7 +120,7 @@ string rtrim(const string &str) {
     string s(str);
 
     s.erase(
-        find_if(s.rbegin(), s.rend(), not1(ptr_fun<int, int>(isspace))).base(),
+        find_if(s.rbegin(), s.rend(), not_fn([] (const char& c) -> bool { return isspace(c);})).base(),
         s.end()
     );
 
