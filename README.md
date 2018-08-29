@@ -28,6 +28,14 @@ As of August 18<sup>th</sup>, 2018:
 - [X] Submit second solution. Got correct
 - [X] Problem solved
 
+### Sansa And Xor
+This is a Bit Manipulation problem from hackerrank. The goal is to give the result of XORing every items of every subarrays of size k, 1 <= k <= n, in a given array of size n. 
+I solved this problem in the C++ language. [Problem link](https://www.hackerrank.com/challenges/sansa-and-xor/problem)  
+As of August 29<sup>th</sup>, 2018:
+- [X] Find a first working solution on the sample input
+- [X] Submit first solution. Got correct
+- [X] Problem solved
+
 </details>
 
 ## Dynamic Programming
