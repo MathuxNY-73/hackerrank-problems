@@ -158,12 +158,38 @@ I solved this problem using C++ language. As of August 27<sup>th</sup>, 2018 :
 
 ### Count Triplets
 This is a data structure challenge from hackerrank. This challenge is about the hash table data structure. The goal is to find the number of triplets of increasing indices such that the sequence of items at those indices form a geometric sequence [Problem link](https://www.hackerrank.com/challenges/count-triplets-1/problem).  
-I solved this problem using C++ language. As of August 28<sup>th</sup>, 2018 :
+I solved this problem using C++ language. As of August 29<sup>th</sup>, 2018 :
 - [X] Find a first working solution on the sample input
 - [X] Submit solution. Got errors on 2 test cases
 - [X] Find a second working solution on the sample input
 - [X] Submit solution. Got errors on 2 test cases
-- [ ] Challenge solved
+- [X] Find a third working solution on the sample input
+- [X] Submit solution. Got correct
+- [X] Challenge solved
+
+### Tree: PreOrder Traversal
+This is a tree data structure challenge from hackerrank. The goal is to traverse a tree in a prefix order and print the node's data accordingly.  
+I solved this problem with the C++ languages [Problem link](https://www.hackerrank.com/challenges/tree-preorder-traversal/problem).  
+As of August 30<sup>th</sup>, 2018:
+- [X] Find a first working solution on the sample input
+- [X] Submit solution. Got correct
+- [X] Challenge solved.
+
+### Tree: PostOrder Traversal
+This is a tree data structure challenge from hackerrank. The goal is to traverse a tree in a postfix order and print the node's data accordingly.  
+I solved this problem with the C++ languages [Problem link](https://www.hackerrank.com/challenges/tree-postorder-traversal/problem).  
+As of August 30<sup>th</sup>, 2018:
+- [X] Find a first working solution on the sample input
+- [X] Submit solution. Got correct
+- [X] Challenge solved.
+
+### Tree: InOrder Traversal
+This is a tree data structure challenge from hackerrank. The goal is to traverse a tree in a infix order and print the node's data accordingly.  
+I solved this problem with the C++ languages [Problem link](https://www.hackerrank.com/challenges/tree-inorder-traversal/problem).  
+As of August 30<sup>th</sup>, 2018:
+- [X] Find a first working solution on the sample input
+- [X] Submit solution. Got correct
+- [X] Challenge solved.
 </details>
 
 ## Search
