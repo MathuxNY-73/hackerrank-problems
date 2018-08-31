@@ -190,6 +190,16 @@ As of August 30<sup>th</sup>, 2018:
 - [X] Find a first working solution on the sample input
 - [X] Submit solution. Got correct
 - [X] Challenge solved.
+
+### Self Balancing Tree
+This is a tree data structure challenge from hackerrank. The goal was to implement the insertion function for an AVL Tree thus the insertion needed to maintain the balance of the tree.  
+I solved this problem with the C++ languages [Problem link](https://www.hackerrank.com/challenges/self-balancing-tree/problem).  
+As of August 31<sup>st</sup>, 2018:
+- [X] Find a first working solution on the sample input
+- [X] Submit solution. Got wrong on 2 Testcases
+- [X] Find a second working solution on the sample input
+- [X] Submitted solution. Got right
+- [X] Challenge solved
 </details>
 
 ## Search
