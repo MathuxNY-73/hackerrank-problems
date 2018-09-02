@@ -32,7 +32,61 @@ vector<string> split_string(string);
 
 // Complete the shortestReach function below.
 vector<int> shortestReach(int n, vector<vector<int>> edges, int s) {
-
+        auto adj_m = map<int, vector<pair<int, int>>>();
+    auto dist = vector<int>(n+1, -1);
+    auto res = vector<int>(n-1);
+    
+    auto q = queue<int>();
+    
+    for(auto i = 0 ; i < edges.size() ; ++i)
+    {
+        auto edge = edges[i];
+        auto it = adj_m.find(edge[0]);
+        
+        if(it == adj_m.cend())
+        {
+            adj_m[edge[0]] = vector<pair<int, int>>();
+        }
+        adj_m[edge[0]].push_back(make_pair(edge[1], edge[2]));
+        
+        it = adj_m.find(edge[1]);
+        
+        if(it == adj_m.cend())
+        {
+            adj_m[edge[1]] = vector<pair<int, int>>();
+        }
+        adj_m[edge[1]].push_back(make_pair(edge[0], edge[2]));
+    }
+    
+    q.push(s);
+    dist[s] = 0;
+    while(!q.empty())
+    {
+        auto cur = q.front();
+        q.pop();
+        
+        for(auto it = adj_m[cur].cbegin() ; it != adj_m[cur].cend() ; ++it)
+        {
+            auto arr = it->first;
+            auto distance = it->second + dist[cur];
+            if(dist[arr] == -1 || dist[arr] > distance)
+            {
+                q.push(arr);
+                dist[arr] = distance;
+            }
+        }
+        
+    }
+    
+    for(auto i = 1, j = 0 ; i < dist.size() ; ++i)
+    {
+        if(i != s)
+        {
+            res[j] = dist[i];
+            ++j;
+        }
+    }
+    return res;
 
 }
 

@@ -102,6 +102,14 @@ As of April 5<sup>th</sup>, 2018:
 - [X] Find a first working solution on the sample input
 - [X] Submit solution. Got a timeout on bigger testcases.
 - [X] Optimize solution and get correct answer. Challenge solved.
+
+### Dijkstra: Shortest Reach 2
+This is a graph theory challenge from hackerrank. The goal is, given a undirected graph, to find the shortest path to each node of the graph from a given source node in the graph.  
+I solved this problem with the C++ languages [Problem link](https://www.hackerrank.com/challenges/dijkstrashortreach/problem).  
+As of September 3<sup>rd</sup>, 2018:
+- [X] Find a first working solution on the sample input
+- [X] Submit solution. Got a timeout on Testcase #7.
+- [ ] Challenge solved.
 </details>
 
 ## Search
