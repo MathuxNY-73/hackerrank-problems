@@ -109,6 +109,8 @@ I solved this problem with the C++ languages [Problem link](https://www.hackerra
 As of September 3<sup>rd</sup>, 2018:
 - [X] Find a first working solution on the sample input
 - [X] Submit solution. Got a timeout on Testcase #7.
+- [X] Find a second working solution on the sample input
+- [X] Submit solution. Got a timeout on Testcase #7.
 - [ ] Challenge solved.
 </details>
 

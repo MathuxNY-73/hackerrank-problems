@@ -32,9 +32,10 @@ vector<string> split_string(string);
 
 // Complete the shortestReach function below.
 vector<int> shortestReach(int n, vector<vector<int>> edges, int s) {
-        auto adj_m = map<int, vector<pair<int, int>>>();
+    auto adj_m = map<int, map<int, int>>();
     auto dist = vector<int>(n+1, -1);
     auto res = vector<int>(n-1);
+    auto visited = unordered_set<int>();
     
     auto q = queue<int>();
     
@@ -45,17 +46,35 @@ vector<int> shortestReach(int n, vector<vector<int>> edges, int s) {
         
         if(it == adj_m.cend())
         {
-            adj_m[edge[0]] = vector<pair<int, int>>();
+            adj_m[edge[0]] = map<int, int>();
         }
-        adj_m[edge[0]].push_back(make_pair(edge[1], edge[2]));
+        
+        auto it_n = adj_m[edge[0]].find(edge[1]);
+        if(it_n == adj_m[edge[0]].cend())
+        {
+            //cout << "edge[0]: " << edge[0] << ", edge[1]: " << edge[1] << endl;
+            adj_m[edge[0]][edge[1]] = edge[2];
+        }
+        else
+        {
+            it_n->second = it_n->second > edge[2] ? edge[2] : it_n->second;
+        }
         
         it = adj_m.find(edge[1]);
-        
         if(it == adj_m.cend())
         {
-            adj_m[edge[1]] = vector<pair<int, int>>();
+            adj_m[edge[1]] = map<int, int>();
         }
-        adj_m[edge[1]].push_back(make_pair(edge[0], edge[2]));
+        
+        it_n = adj_m[edge[1]].find(edge[0]);
+        if(it_n == adj_m[edge[1]].cend())
+        {
+            adj_m[edge[1]][edge[0]] = edge[2];
+        }
+        else
+        {
+            it_n->second = it_n->second > edge[2] ? edge[2] : it_n->second;
+        }
     }
     
     q.push(s);
@@ -64,10 +83,12 @@ vector<int> shortestReach(int n, vector<vector<int>> edges, int s) {
     {
         auto cur = q.front();
         q.pop();
+        visited.insert(cur);
         
         for(auto it = adj_m[cur].cbegin() ; it != adj_m[cur].cend() ; ++it)
         {
             auto arr = it->first;
+            //cout << "cur: " << cur << ", arr: " << arr <<endl;
             auto distance = it->second + dist[cur];
             if(dist[arr] == -1 || dist[arr] > distance)
             {
@@ -87,7 +108,6 @@ vector<int> shortestReach(int n, vector<vector<int>> edges, int s) {
         }
     }
     return res;
-
 }
 
 int main()
