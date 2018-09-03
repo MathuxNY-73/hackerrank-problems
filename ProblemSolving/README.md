@@ -115,7 +115,9 @@ As of September 3<sup>rd</sup>, 2018:
 - [X] Submit solution. Got a timeout on Testcase #7 and #6.
 - [X] Find a fourth working solution on the sample input
 - [X] Submit solution. Got a timeout on Testcase #7.
-- [ ] Challenge solved.
+- [X] Change the way to read input as it is to slow for TestCase #7 going from 18s to 6s of execution time.
+- [X] Submit solution. Got correct
+- [X] Challenge solved.
 </details>
 
 ## Search
