@@ -100,8 +100,11 @@ vector<int> shortestReach(int n, vector<vector<int>> edges, int s) {
     
     for(auto i = 0 ; i < n ; ++i)
     {
-        sort(q.begin() + i, q.end(), MySort(dist));
-        auto cur_id = q[i];
+        auto min_it = min_element(q.begin(), q.end(), MySort(dist));
+        iter_swap(min_it, q.end() - 1);
+        auto cur_id = q.back();
+        q.pop_back();
+        
         cout << "cur_id: " << cur_id << endl;
         auto cur_w = dist[cur_id];
         cout << "cur_w: " << cur_w << endl;

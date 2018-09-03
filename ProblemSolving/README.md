@@ -113,6 +113,8 @@ As of September 3<sup>rd</sup>, 2018:
 - [X] Submit solution. Got a timeout on Testcase #7.
 - [X] Find a third working solution on the sample input
 - [X] Submit solution. Got a timeout on Testcase #7 and #6.
+- [X] Find a fourth working solution on the sample input
+- [X] Submit solution. Got a timeout on Testcase #7.
 - [ ] Challenge solved.
 </details>
 
