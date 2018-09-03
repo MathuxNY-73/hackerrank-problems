@@ -26,18 +26,31 @@
 #include <stack>
 #include <array>
 
+#define INF 9999999
+
 using namespace std;
 
 vector<string> split_string(string);
 
+struct MySort {
+    private:
+        vector<int> dist;
+    
+    public:
+        bool operator()(const int& a, const int& b) const {
+            return dist[a] < dist[b];
+        }
+    
+        MySort(const vector<int>& a): dist(a) {}
+        ~MySort() {}
+};
+
 // Complete the shortestReach function below.
 vector<int> shortestReach(int n, vector<vector<int>> edges, int s) {
     auto adj_m = map<int, map<int, int>>();
-    auto dist = vector<int>(n+1, -1);
     auto res = vector<int>(n-1);
-    auto visited = unordered_set<int>();
-    
-    auto q = queue<int>();
+    auto dist = vector<int>(n+1);
+    auto q = vector<int>(n);
     
     for(auto i = 0 ; i < edges.size() ; ++i)
     {
@@ -57,7 +70,7 @@ vector<int> shortestReach(int n, vector<vector<int>> edges, int s) {
         }
         else
         {
-            it_n->second = it_n->second > edge[2] ? edge[2] : it_n->second;
+            it_n->second = min(it_n->second, edge[2]);
         }
         
         it = adj_m.find(edge[1]);
@@ -73,37 +86,42 @@ vector<int> shortestReach(int n, vector<vector<int>> edges, int s) {
         }
         else
         {
-            it_n->second = it_n->second > edge[2] ? edge[2] : it_n->second;
+            it_n->second = min(it_n->second, edge[2]);
         }
     }
     
-    q.push(s);
-    dist[s] = 0;
-    while(!q.empty())
+    for(auto i = 1 ; i < n + 1 ; ++i)
     {
-        auto cur = q.front();
-        q.pop();
-        visited.insert(cur);
+        q[i-1] = i;
+        dist[i] = INF;
+    }
+    
+    dist[s] = 0;
+    
+    for(auto i = 0 ; i < n ; ++i)
+    {
+        sort(q.begin() + i, q.end(), MySort(dist));
+        auto cur_id = q[i];
+        cout << "cur_id: " << cur_id << endl;
+        auto cur_w = dist[cur_id];
+        cout << "cur_w: " << cur_w << endl;
         
-        for(auto it = adj_m[cur].cbegin() ; it != adj_m[cur].cend() ; ++it)
+        for(auto it = adj_m[cur_id].cbegin() ; it != adj_m[cur_id].cend() ; ++it)
         {
             auto arr = it->first;
-            //cout << "cur: " << cur << ", arr: " << arr <<endl;
-            auto distance = it->second + dist[cur];
-            if(dist[arr] == -1 || dist[arr] > distance)
+            auto distance = it->second + cur_w;
+            if(dist[arr] > distance)
             {
-                q.push(arr);
                 dist[arr] = distance;
             }
         }
-        
     }
     
     for(auto i = 1, j = 0 ; i < dist.size() ; ++i)
     {
         if(i != s)
         {
-            res[j] = dist[i];
+            res[j] = (dist[i] >= INF ? -1 : dist[i]);
             ++j;
         }
     }
