@@ -49,7 +49,7 @@ struct MySort {
 };
 
 // Complete the shortestReach function below.
-vector<int> shortestReach(int n, vector<array<int, 3>> edges, int s) {
+vector<int> shortestReach(int n, vector<array<int,3>> edges, int s) {
     auto adj_m = map<int, map<int, int>>();
     auto res = vector<int>(n-1);
     auto dist = vector<int>(n+1);
@@ -107,9 +107,9 @@ vector<int> shortestReach(int n, vector<array<int, 3>> edges, int s) {
         auto cur_id = q.back();
         q.pop_back();
 
-        //cout << "cur_id: " << cur_id << endl;
+        cout << "cur_id: " << cur_id << endl;
         auto cur_w = dist[cur_id];
-        //cout << "cur_w: " << cur_w << endl;
+        cout << "cur_w: " << cur_w << endl;
 
         for(auto it = adj_m[cur_id].cbegin() ; it != adj_m[cur_id].cend() ; ++it)
         {
@@ -170,6 +170,8 @@ int main()
 
     int t;
     fastscan(t);
+
+    cout << t << endl;
 
     wl(t)
     {
