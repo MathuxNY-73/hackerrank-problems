@@ -122,6 +122,8 @@ int main()
         int result = equal(n,colleagues);
 
         printf("%d\n", result);
+
+        free(colleagues);
     }
 
     return 0;

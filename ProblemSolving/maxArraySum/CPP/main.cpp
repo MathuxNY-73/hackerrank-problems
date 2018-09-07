@@ -42,7 +42,7 @@ int maxSubsetSum(vector<int> arr) {
         arr[i] = max(max(arr[i-2] + arr[i], arr[i-1]), arr[i]);
     }
 
-    return *max_element(arr.cbegin(), arr.cend());
+    return arr[arr.size() - 1];
 }
 
 inline void fastscan(int &number)
