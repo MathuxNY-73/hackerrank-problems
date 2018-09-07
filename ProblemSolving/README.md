@@ -90,6 +90,16 @@ As of September 7<sup>th</sup>, 2018:
 - [X] Find a C++ working solution on the sample input
 - [X] Submit C++ solution.
 - [X] Problem solved
+
+### Max Array Sum
+This is a dynamic programming challenge from hackerrank. The goal is to determine the maximum sum of non-consecutive elements in a given array.  
+I try to solve this problem using the C and C++ language. [Problem link](https://www.hackerrank.com/challenges/max-array-sum/problem)  
+As of September 7<sup>th</sup>, 2018:
+- [X] Find a first working solution on the sample input
+- [X] Submit first solution. Got wrong
+- [X] Find a second working solution on the sample input
+- [X] Submit second solution. Got correct
+- [X] Problem solved
 </details>
 
 ## Graph Theory
