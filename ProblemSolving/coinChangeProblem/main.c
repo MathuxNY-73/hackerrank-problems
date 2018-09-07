@@ -31,21 +31,24 @@ long getWays(long n, int c_count, long* c) {
 }
 
 long getWays_2(long n, int c_count, long* c) {
-    long ways[n+1];
-
-    memset(ways, 0, sizeof(ways));
-
-    ways[0] = 1;
+    long ways[c_count][n+1];
 
     for(int i = 0 ; i < c_count ; ++i)
     {
-        for(long j = c[i] ; j <= n ; ++j)
+        ways[i][0] = 1;
+        memset(ways[i] + 1, 0, n * sizeof(long));
+    }
+
+    for(int i = 1 ; i <= n ; ++i)
+    {
+        for(long j = 0 ; j < c_count ; ++j)
         {
-            ways[j] += ways[j - c[i]];
+            ways[j][i] += i >= c[j] ? ways[j][i - c[j]] : 0;
+            ways[j][i] += j > 0 ? ways[j-1][i] : 0;
         }
     }
 
-    return ways[n];
+    return ways[c_count-1][n];
 }
 
 void fastscan_long(long* number)
@@ -123,7 +126,7 @@ int main()
         fastscan_long(&coins[i]);
     }
 
-    long result = getWays(n, m, coins);
+    long result = getWays_2(n, m, coins);
         printf("%ld\n", result);
 
     free(coins);
