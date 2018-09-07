@@ -82,10 +82,10 @@ As of September 7<sup>rd</sup>, 2018:
 ### Equal
 This is a dynamic programming challenge from hackerrank. The goal is to determine the minimum number of operations to reach balance between elements of a given array working only with intergers [1,2,5] and changing all but one element at each operation.  
 I try to solve this problem using the C language. [Problem link](https://www.hackerrank.com/challenges/equal/problem)  
-As of August 5<sup>th</sup>, 2018:
-- [ ] Find a first working solution on the sample input
-- [ ] Submit first solution.
-- [ ] Problem solved
+As of September 7<sup>th</sup>, 2018:
+- [X] Find a first working solution on the sample input
+- [X] Submit first solution.
+- [X] Problem solved
 </details>
 
 ## Graph Theory
