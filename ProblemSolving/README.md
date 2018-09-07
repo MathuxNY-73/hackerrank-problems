@@ -68,14 +68,16 @@ As of February 23<sup>rd</sup>, 2018:
 ### The Coin Change Problem
 This is a dynamic programming challenge from hackerrank. The goal is to determine the number of ways to make change for a given number of units using any number of coins.  
 I try to solve this problem using the C language. [Problem link](https://www.hackerrank.com/challenges/coin-change/problem)  
-As of August 3<sup>rd</sup>, 2018:
+As of September 7<sup>rd</sup>, 2018:
 - [X] Find a first working solution on the sample input
 - [X] Submit first solution. Got wrong on larger sets
 - [X] Find a second working solution on the sample input
 - [X] Submit second solution. Got runtime error on test set #10
 - [X] Find a third working solution on the sample input
 - [X] Submit third solution. Got runtime error on test set #10
-- [ ] Problem solved
+- [X] Replace main provided by Hackerrank with mine
+- [X] Submit third solution. Got correct
+- [X] Problem solved
 
 ### Equal
 This is a dynamic programming challenge from hackerrank. The goal is to determine the minimum number of operations to reach balance between elements of a given array working only with intergers [1,2,5] and changing all but one element at each operation.  
