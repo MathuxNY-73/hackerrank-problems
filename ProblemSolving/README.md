@@ -100,6 +100,17 @@ As of September 7<sup>th</sup>, 2018:
 - [X] Find a second working solution on the sample input
 - [X] Submit second solution. Got correct
 - [X] Problem solved
+
+### Abbreviation
+This is a dynamic programming challenge from hackerrank. The goal is to check if a string matches another string by applying transformation to the first string:
+  - Capitalize 0 or more lowercase letters.
+  - Delete 0 or more lowercase letters.  
+I try to solve this problem using the C++ language. [Problem link](https://www.hackerrank.com/challenges/abbr/problem)  
+As of September 9<sup>th</sup>, 2018:
+- [X] Find a first working solution on the sample input
+- [X] Submit first solution. Got timeout on bigger Testset
+- [ ] Find a second working solution on the sample input
+- [ ] Problem solved
 </details>
 
 ## Graph Theory
