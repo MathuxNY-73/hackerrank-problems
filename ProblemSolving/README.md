@@ -109,8 +109,9 @@ I try to solve this problem using the C++ language. [Problem link](https://www.h
 As of September 9<sup>th</sup>, 2018:
 - [X] Find a first working solution on the sample input
 - [X] Submit first solution. Got timeout on bigger Testset
-- [ ] Find a second working solution on the sample input
-- [ ] Problem solved
+- [X] Find a second working solution on the sample input
+- [X] Submit second solution. Got correct
+- [X] Problem solved
 </details>
 
 ## Graph Theory

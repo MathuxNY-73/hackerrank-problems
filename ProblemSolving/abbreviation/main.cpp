@@ -33,59 +33,80 @@
 
 using namespace std;
 
-// Complete the abbreviation function below.
-string abbreviation(string a, string b) {
-    if(is_matching(a,b))
+void print(const vector<vector<bool>>& a) {
+    for(auto& x: a)
     {
-        return "YES";
-    }
-    else
-    {
-        return "NO";
+        for(auto y: x)
+        {
+            cout << y << " ";
+        }
+        cout << endl;
     }
 }
 
-bool is_matching(string a, string b)
-{
-    if(b.size() == 0)
+// Complete the abbreviation function below.
+string abbreviation(string a, string b) {
+
+    auto a_s = a.size();
+    auto b_s = b.size();
+
+    auto tbl = vector<vector<bool>>(a_s + 1);
+
+    auto cap = false;
+    for(auto i = 0 ; i < tbl.size() ; ++i)
     {
-        auto res = true;
-        for(auto c: a)
+        tbl[i] = vector<bool>(b_s + 1);
+        auto k = a_s - i;
+        if((a[k] >= 'A' && a[k] <= 'Z') || cap)
         {
-            res = res || !('A' <= c && c <= 'Z');
+            cap = true;
+            tbl[i][0] = false;
         }
-        return res;
-    }
-    else if(a.size() == 0)
-    {
-        return false;
+        else
+        {
+            tbl[i][0] = true;
+        }
     }
 
-    auto last_char_a = *(a.cend() - 1);
-    auto last_char_b = *(b.cend() - 1);
+    for(auto i = 0 ; i <= b_s ; ++i)
+    {
+        tbl[0][i] = i == 0;
+    }
 
-    if(last_char_a == last_char_b)
+    for(int i = a_s - 1; i >= 0; --i)
     {
-        return is_matching(a.substr(0, a.size() - 1), b.substr(0, b.size() - 1));
+        //cout << "Hello 1" << endl;
+        auto k = a_s - i;
+        for(int j = b_s - 1; j >= 0 ; --j)
+        {
+            auto l = b_s - j;
+
+            //cout << "Hello 2 a[i]:" << a[i] << " b[j]:" << b[j] << endl;
+            if(a[i] == b[j])
+            {
+                tbl[k][l] = tbl[k - 1][l - 1];
+            }
+            else if(toupper(a[i]) == b[j])
+            {
+                tbl[k][l] = tbl[k - 1][l - 1] || tbl[k-1][l];
+            }
+            else if(a[i] >= 'A' && a[i] <= 'Z')
+            {
+                tbl[k][l] = false;
+            }
+            else
+            {
+                tbl[k][l] = tbl[k - 1][l];
+            }
+        }
+            //print(tbl);
     }
-    else if('A' <= last_char_a && last_char_a <= 'Z')
-    {
-        return false;
-    }
-    else
-    {   
-        //cout << "Before: " << a[a.size() - 1] << endl;
-        a[a.size() - 1] += ('A' - 'a');
-        //cout << "Cap: " << a[a.size() - 1] <<endl;
-         return is_matching(a.substr(0, a.size() - 1), b) ||
-            is_matching(a, b);
-    }
+
+    return tbl[a_s][b_s] ? "YES" : "NO";
 }
 
 int main()
 {
-    ofstream fout(getenv("OUTPUT_PATH"));
-
     int q;
     cin >> q;
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -99,10 +120,8 @@ int main()
 
         string result = abbreviation(a, b);
 
-        fout << result << "\n";
+        cout << result << "\n";
     }
-
-    fout.close();
 
     return 0;
 }
