@@ -9,4 +9,6 @@ As of September 12<sup>th</sup>, 2018 :
 - [X] Submitted solution. Got Floating point exception: 8 as the number gets bigger
 - [X] Find a second working solution on the sample input
 - [X] Submitted solution. Got wrong answer
-- [ ] Challenge solved
+- [X] Find a third working solution on the sample input. Solution cannot include division as we lose precision. Remaining way is to build the Pascal Triangle.
+- [X] Submitted solution. Got correct
+- [X] Challenge solved

@@ -13,37 +13,27 @@
 
 // Complete the getWays function below.
 int* solve(int n, int* result_count) {
-    long long num = 1;
-    long long den = 1;
-    *result_count = 0;
-    
-    int* res = malloc(sizeof(int) * (n+1));
-    res[0] = num / den;
-    ++(*result_count);
-    
-    int lim = floor(n/2.0);
-    
-    for(int i = 1; i <= lim ; ++i)
-    {
-        //printf("%d\n", INT_MAX);
-        //printf("Hello1 num: %lld\n", num);
-        num = (long long)(num * ((double)(n-i+1)/i)) % 1000000000;
-        //printf("Hello2 num: %lld\n", num);
+    *result_count = n+1;
 
-        //printf("Hello 1\n");
-        res[i] = num;
+    int** res = malloc(sizeof(int*) * (n+1));
+    res[0] = malloc(sizeof(int));
+    res[0][0] = 1;
 
-        //printf("%d: %d\n", i, res[i]);
-        ++(*result_count);
-    }
-    
-    for(int i = lim + 1; i <= n; ++i)
+    for(int i = 1; i <= n ; ++i)
     {
-        res[i] = res[n - i];
-        ++(*result_count);
+        res[i] = malloc(sizeof(int) * (i + 1));
+        for(int j = 0 ; j <= i ; ++j)
+        {
+            int r = j > 0 ? res[i-1][j-1] : 0;
+            int l = j < i ? res[i-1][j] : 0;
+            res[i][j] = (r + l) % 1000000000;
+        }
+        free(res[i-1]);
     }
-    
-    return res;
+
+    int* tmp = res[n];
+    free(res);
+    return tmp;
 }
 
 void fastscan_long(long* number)
