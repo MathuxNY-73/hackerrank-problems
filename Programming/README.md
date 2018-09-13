@@ -28,6 +28,14 @@ As of September 1<sup>st</sup>, 2018 :
 - [X] Find a first working solution on the sample input
 - [X] Submitted solution. Got right
 - [X] Challenge solved
+
+### List Replication
+This is a Functional Programming challenge from hackerrank. The goal is simply to implement a function that takes in an array and return a new array with each element of the original repeated n times, n passsed as an argument of the function.  
+I solved this problem with the scala languages [Problem link](https://www.hackerrank.com/challenges/fp-list-replication/problem)  
+As of September 14<sup>th</sup>, 2018 :
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got right
+- [X] Challenge solved
 </details>
 
 ## C++
