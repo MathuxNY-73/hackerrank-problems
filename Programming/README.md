@@ -36,6 +36,14 @@ As of September 14<sup>th</sup>, 2018 :
 - [X] Find a first working solution on the sample input
 - [X] Submitted solution. Got right
 - [X] Challenge solved
+
+### Filter Array
+This is a Functional Programming challenge from hackerrank. The goal is simply to implement a function that filters out the elements that are less than a certain integer and returns a new list containing the remaining element.  
+I solved this problem with the scala languages [Problem link](https://www.hackerrank.com/challenges/fp-filter-array/problem)  
+As of September 14<sup>th</sup>, 2018 :
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got right
+- [X] Challenge solved
 </details>
 
 ## C++
