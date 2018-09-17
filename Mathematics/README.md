@@ -12,3 +12,11 @@ As of September 12<sup>th</sup>, 2018 :
 - [X] Find a third working solution on the sample input. Solution cannot include division as we lose precision. Remaining way is to build the Pascal Triangle.
 - [X] Submitted solution. Got correct
 - [X] Challenge solved
+
+## Coinage
+This is a mathematics challenge from hackerrank. The goal is to find the number of combinations of coins to make a certain amount with constraints on the number of coins available.  
+I tried to solve this problem using the C language [Problem link](https://www.hackerrank.com/challenges/coinage/problem).  
+As of September 17<sup>th</sup>, 2018 :
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got Timeout on bigger TestCase
+- [ ] Challenge solved
