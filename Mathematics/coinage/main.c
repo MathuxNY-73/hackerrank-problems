@@ -10,6 +10,8 @@
 
 #define wl(n) while(n--)
 #define fl(i,a,b) for(i=a; i<b; ++i)
+#define max(a,b) a>b?a:b
+#define min(a,b) a>b?b:a
 
 // Complete the getWays function below.
 int solve(int n, int coins_count, int* coins) {
@@ -31,6 +33,32 @@ int solve(int n, int coins_count, int* coins) {
             res += count[n - i*10 - j*5];
         }   
     }
+
+    free(count);
+    return res;
+}
+
+int sub_solve(int n, int c1, int c2, int n1, int n2)
+{
+    int t1 = (int)n / c1;
+    int min_c2 = (int)ceil((n - c1*(n1 > t1 ? t1 : n1)) / (double)c2);
+    int t2 = (int)n / c2;
+    int max_c2 = n2 > t2 ? t2 : n2;
+    int t3 = max_c2 - min_c2 + 1;
+    int count = t3 > 0 ? t3 : 0;
+    return count;
+}
+
+int opt_solve(int n, int coins_count, int* coins) {
+    int res = 0;
+
+    for(int i = 0 ; i <= (int)n / 5 ; ++i)
+    {
+        //printf("%d\n", i);
+        //printf("%d\n", n);
+        res += sub_solve(5*i,5,10,coins[2], coins[3]) * sub_solve(n - 5*i,1,2,coins[0], coins[1]);
+    }
+
     return res;
 }
 
@@ -112,7 +140,7 @@ int main()
             fastscan_int(&coins[i]);
         }
 
-        int result = solve(n, 4, coins);
+        int result = opt_solve(n, 4, coins);
 
         printf("%d", result);
 
