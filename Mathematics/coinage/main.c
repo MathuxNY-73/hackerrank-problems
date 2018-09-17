@@ -24,13 +24,9 @@ int solve(int n, int coins_count, int* coins) {
             for(int k = 0 ; k <= coins[1] && k*2<=tmp_2 ; ++k)
             {
                 int tmp_3 = tmp_2 - k*2; 
-                for(int l = 0 ; l <= coins[0] && l<=tmp_3 ; ++l)
+                if(tmp_3 <= coins[0])
                 {
-                    int tmp_4 = tmp_3 - l;
-                    if(tmp_4 == 0)
-                    {
-                        ++count;
-                    }
+                    ++count;
                 }
             }
         }   
