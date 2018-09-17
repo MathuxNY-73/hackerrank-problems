@@ -13,25 +13,25 @@
 
 // Complete the getWays function below.
 int solve(int n, int coins_count, int* coins) {
-    int count = 0;
+    int res = 0;
+    int* count = malloc(sizeof(int) * (n+1));
+    memset(count, 0, sizeof(int) * (n+1));
     
+    for(int i = 0 ; i <= coins[1] && i*2<=n; ++i)
+    {
+        for(int j = 0 ; j <= coins[0] && j + i*2 <= n ; ++j)
+        {
+            ++count[j+2*i];
+        }
+    }
     for(int i = 0 ; i <= coins[3] && i*10<=n ; ++i)
     {
-        int tmp = n - i*10;
-        for(int j = 0 ; j <= coins[2] && j*5<=tmp ; ++j)
+        for(int j = 0 ; j <= coins[2] && j*5 + i*10 <=n ; ++j)
         {
-            int tmp_2 = tmp - j*5;
-            for(int k = 0 ; k <= coins[1] && k*2<=tmp_2 ; ++k)
-            {
-                int tmp_3 = tmp_2 - k*2; 
-                if(tmp_3 <= coins[0])
-                {
-                    ++count;
-                }
-            }
+            res += count[n - i*10 - j*5];
         }   
     }
-    return count;
+    return res;
 }
 
 void fastscan_long(long* number)

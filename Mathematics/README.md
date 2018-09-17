@@ -21,4 +21,6 @@ As of September 17<sup>th</sup>, 2018 :
 - [X] Submitted solution. Got Timeout on bigger TestCase
 - [X] Find a second working solution on the sample input
 - [X] Submitted solution. Got Correct. Solved in O(BxCxD) where B (resp. C and D) is the number of 2 (resp. 5 and 10) coins.
+- [X] Find a third working solution on the sample input
+- [X] Submitted solution. Got Correct. Solved in O(AxB+CxD) where A (resp. B, C and D) is the number of 1 (resp. 2, 5 and 10) coins.
 - [X] Challenge solved
