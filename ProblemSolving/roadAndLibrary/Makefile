@@ -1,22 +1,22 @@
-CC=gcc
-CFLAGS=-W -Wall -pedantic
+CXX=g++
+CXFLAGS=-Wc++17-extensions -Wall -stdlib=libc++ -std=c++17 -pedantic
 LDFLAGS=
 EXEC=main
-SRC=$(wildcard *.c)
-OBJ=$(SRC:.c=.o)
+SRC=$(wildcard *.cpp)
+OBJ=$(SRC:.cpp=.o)
 
 all: $(EXEC)
 
 main: main.o
-	@$(CC) -o $@ $^ $(LDFLAGS)
+	@$(CXX) -o $@ $^ $(LDFLAGS)
 
-%.o : %.c
-	$(CC) -o $@ -c $< $(CFLAGS)
+%.o : %.cpp
+	$(CXX) -o $@ -c $< $(CXFLAGS)
 
 .PHONY: clean mrproper
 
 clean:
 	@rm -rf *.o
 
-mrproper: clean
+mrproper:
 	@rm -rf $(EXEC)

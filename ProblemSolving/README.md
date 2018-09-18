@@ -154,6 +154,14 @@ As of September 3<sup>rd</sup>, 2018:
 - [X] Change the way to read input as it is to slow for TestCase #7 going from 18s to 6s of execution time.
 - [X] Submit solution. Got correct
 - [X] Challenge solved.
+
+### Roads and Libraries
+This is a graph theory challenge from hackerrank. The goal is, given a undirected graph, to find the minimum cost to allow access to a library for inhabitants of the country the graph represents.  
+I tried to solve this problem with the C++ languages [Problem link](https://www.hackerrank.com/challenges/torque-and-development/problem).  
+As of September 18<sup>th</sup>, 2018:
+- [X] Find a first working solution on the sample input
+- [X] Submit solution. Got wrong
+- [ ] Challenge solved.
 </details>
 
 ## Search
@@ -164,6 +172,19 @@ As of September 3<sup>rd</sup>, 2018:
 This is a search challenge from hackerrank. The goal is to find an item in a given array such that the sum of all integers on the right equals that of the integers on the left of the item. This challenge was part of the Criteo Algorithm Competition of January 2018.  
 I solved this problem with the C languages [Problem link](https://www.hackerrank.com/challenges/sherlock-and-array/problem)  
 As of August 20<sup>th</sup>, 2018 :
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got right
+- [X] Challenge solved
+</details>
+
+## String Manipulation
+<details>
+<summary>The following subsection contains description of all problems relating to string manipulation</summary>
+
+### Strings: Making Anagrams
+This is a string manipulation challenge from hackerrank. The goal is to count the number of letters that need to be deleted from two lowercase strings in order to make them anagramic.  
+I solved this problem with the C++ languages [Problem link](https://www.hackerrank.com/challenges/ctci-making-anagrams/problem)  
+As of September 10<sup>th</sup>, 2018 :
 - [X] Find a first working solution on the sample input
 - [X] Submitted solution. Got right
 - [X] Challenge solved
