@@ -160,7 +160,7 @@ This is a graph theory challenge from hackerrank. The goal is, given a undirecte
 I tried to solve this problem with the C++ languages [Problem link](https://www.hackerrank.com/challenges/torque-and-development/problem).  
 As of September 18<sup>th</sup>, 2018:
 - [X] Find a first working solution on the sample input
-- [X] Submit solution. Got wrong
+- [X] Submit solution. Got Timeout on bigger testcases
 - [ ] Challenge solved.
 </details>
 

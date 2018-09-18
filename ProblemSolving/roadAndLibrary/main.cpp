@@ -37,12 +37,18 @@ long roadsAndLibraries(int n, int c_lib, int c_road, vector<vector<int>> cities)
 
     if(c_lib <= c_road)
     {
-        return (long)(c_lib * n);
+        return (long)c_lib * (long)n;
     }
     
     auto edges = map<int, vector<int>>();
     auto visited = unordered_set<int>();
     auto nodes = set<int>();
+    
+    for(auto i = 1 ; i <= n ; ++i)
+    {
+        nodes.insert(i);
+        edges.insert({i, vector<int>()});
+    }
 
     for(auto c: cities)
     {
@@ -61,9 +67,6 @@ long roadsAndLibraries(int n, int c_lib, int c_road, vector<vector<int>> cities)
         
         edges[c_d].push_back(c_a);
         edges[c_a].push_back(c_d);
-        
-        nodes.insert(c_d);
-        nodes.insert(c_a);
     }
     
     long res = 0;
@@ -74,7 +77,7 @@ long roadsAndLibraries(int n, int c_lib, int c_road, vector<vector<int>> cities)
         });
         q.push(*cur_it);
         visited.insert(*cur_it);
-        res += c_lib;
+        res += (long)c_lib;
     while(!q.empty())
     {
         auto cur = q.front();
@@ -83,7 +86,7 @@ long roadsAndLibraries(int n, int c_lib, int c_road, vector<vector<int>> cities)
             {
                 if(visited.find(x) == visited.cend())
                 {
-                    res += c_road;
+                    res += (long)c_road;
                     visited.insert(x);
                     q.push(x);
                 }
@@ -146,9 +149,9 @@ int main()
             fastscan(g[i][1]);
         }
 
-        auto res = roadsAndLibraries(n, c_lib, c_road, g);
+        unsigned long long res = roadsAndLibraries(n, c_lib, c_road, g);
 
-        printf("%ld\n", res);
+        printf("%lld\n", res);
     }
 
     return 0;
