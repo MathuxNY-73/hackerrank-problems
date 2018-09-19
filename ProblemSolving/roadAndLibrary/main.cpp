@@ -33,66 +33,72 @@
 
 using namespace std;
 
+void setUnion(vector<int>& rank, vector<int>& set, vector<int>& counts, int r, int l)
+{
+    if(r == l)
+    {
+        return;
+    }
+
+    if(rank[r] > rank[l])
+    {
+        set[l] = r;
+        counts[r] += counts[l];
+    }
+    else
+    {
+        set[r] = l;
+        counts[l] += counts[r];
+        if(rank[r] == rank[l])
+        {
+            ++rank[r];
+        }
+    }
+}
+
+int findSet(vector<int>& set, int i) {
+    if(set[i] != i)
+    {
+        set[i] = findSet(set, set[i]);
+    }
+    return set[i];
+}
+
 long roadsAndLibraries(int n, int c_lib, int c_road, vector<vector<int>> cities) {
 
     if(c_lib <= c_road)
     {
         return (long)c_lib * (long)n;
     }
-    
-    auto edges = map<int, vector<int>>();
-    auto visited = unordered_set<int>();
-    auto nodes = set<int>();
-    
+
+    auto ranks = vector<int>(n+1);
+    auto set = vector<int>(n+1);
+    auto counts = vector<int>(n+1);
+
     for(auto i = 1 ; i <= n ; ++i)
     {
-        nodes.insert(i);
-        edges.insert({i, vector<int>()});
+        ranks[i] = 0;
+        set[i] = i;
+        counts[i] = 1;
     }
 
     for(auto c: cities)
     {
         auto c_d = c[0];
         auto c_a = c[1];
-        
-        if(edges.find(c_d) == edges.cend())
-        {
-            edges.insert({c_d, vector<int>()});
-        }
-        
-        if(edges.find(c_a) == edges.cend())
-        {
-            edges.insert({c_a, vector<int>()});
-        }
-        
-        edges[c_d].push_back(c_a);
-        edges[c_a].push_back(c_d);
+        setUnion(ranks, set, counts, findSet(set, c_d), findSet(set, c_a));
     }
     
     long res = 0;
-    while(visited.size() != nodes.size()) {
-        auto q = queue<int>();
-        auto cur_it = find_if(nodes.cbegin(), nodes.cend(), [&visited](auto n) -> bool {
-           return visited.find(n) == visited.cend();
-        });
-        q.push(*cur_it);
-        visited.insert(*cur_it);
-        res += (long)c_lib;
-    while(!q.empty())
+    for(auto i = 1 ; i < n+1 ; ++i)
     {
-        auto cur = q.front();
-        q.pop();
-            for(auto x: edges[cur])
-            {
-                if(visited.find(x) == visited.cend())
-                {
-                    res += (long)c_road;
-                    visited.insert(x);
-                    q.push(x);
-                }
-            }
+        if(set[i] == i)
+        {
+            cout << "i:"<<i<<" counts:"<<counts[i]<<" ranks:" << ranks[i]<<endl;
+            res += (counts[i] - 1) * c_road + c_lib;
+        }
     }
-    }
+
     return res;
 }
 

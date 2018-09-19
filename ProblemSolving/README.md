@@ -161,7 +161,9 @@ I tried to solve this problem with the C++ languages [Problem link](https://www.
 As of September 18<sup>th</sup>, 2018:
 - [X] Find a first working solution on the sample input
 - [X] Submit solution. Got Timeout on bigger testcases
-- [ ] Challenge solved.
+- [X] Find a second working solution on the sample input. Used disjoint sets to count the number of connected components
+- [X] Submit solution. Got Correct
+- [X] Challenge solved.
 </details>
 
 ## Search
