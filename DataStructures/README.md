@@ -66,6 +66,14 @@ As of August 31<sup>st</sup>, 2018:
 - [X] Find a second working solution on the sample input
 - [X] Submitted solution. Got right
 - [X] Challenge solved
+
+### Linked Lists: Detect a Cycle
+This is a linked list data structure challenge from hackerrank. The goal was to implement the detection of a cycle in a single linked list.  
+I solved this problem with the C++ languages [Problem link](https://www.hackerrank.com/challenges/ctci-linked-list-cycle/problem).  
+As of October 1<sup>st</sup>, 2018:
+- [X] Find a first working solution on the sample input
+- [X] Submit solution. Got correct
+- [X] Challenge solved
 </details>
 
 ## Hash Table
