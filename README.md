@@ -7,8 +7,8 @@ The DataStructures directory contains all solutions or attempts at solving hacke
 ## Mathematics
 The Mathematics directory contains all solutions or attempts at solving hackerank challenges that relate to the domain of the Mathematics.
 
-## Problem Solving
-The ProblemSolving directory contains all solutions or attempts at solving hackerrank challenges that relate to the solving of a problem.
+## Algorithms
+The Algorithms directory contains all solutions or attempts at solving hackerrank challenges that relate to the solving of a problem.
 
 ## Programming
 The Programming directory contains all solutions of hackerrank challenges that relate to Programming Languages and Programming Paradigm.
