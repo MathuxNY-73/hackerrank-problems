@@ -37,10 +37,12 @@ As of October 3<sup>rd</sup>, 2018 :
 
 ## Constructing a Number
 This is a mathematics challenge from hackerrank. The goal is to determine if it is possible to construct a number that is divisible by 3 from a list of given integers by reordering their digits and using all of those digits.  
-I tried to solve this problem using the C language [Problem link](https://www.hackerrank.com/challenges/constructing-a-number/problem).  
+I tried to solve this problem using the C and Scala language [Problem link](https://www.hackerrank.com/challenges/constructing-a-number/problem).  
 As of October 3<sup>rd</sup>, 2018 :
 - [X] Find a first working solution on the sample input
 - [X] Submitted solution. Got correct
 - [X] Find a second working solution on the sample input
+- [X] Submitted solution. Got correct
+- [X] Find a third working solution on the sample input in Scala
 - [X] Submitted solution. Got correct
 - [X] Challenge solved
