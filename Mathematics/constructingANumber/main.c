@@ -14,21 +14,6 @@
 #define min(a,b) a>b?b:a
 
 // Complete the getWays function below.
-int getDigit(int num, int n)
-{
-    int r, t1, t2;
-    
-    t1 = pow(10, n+1);
-    r = num % t1;
-    
-    if(n > 0)
-    {
-        t2 = pow(10, n);
-        r = floor(r / t2);
-    }
-    
-    return r;
-}
 // Please either make the string static or allocate on the heap. For example,
 // static char str[] = "hello world";
 // return str;
@@ -46,12 +31,11 @@ char* canConstruct(int a_count, int* a) {
     
     for(int i = 0 ; i < a_count ; ++i)
     {
-        int n = 0;
-        int d = getDigit(a[i], n);
-        while(n < 11)
+        int c = a[i];
+        while(c)
         {
-            sum += d;
-            d = getDigit(a[i], ++n);
+            sum += c % 10;
+            c /= 10;
         }
     }
     

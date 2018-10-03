@@ -41,4 +41,6 @@ I tried to solve this problem using the C language [Problem link](https://www.ha
 As of October 3<sup>rd</sup>, 2018 :
 - [X] Find a first working solution on the sample input
 - [X] Submitted solution. Got correct
+- [X] Find a second working solution on the sample input
+- [X] Submitted solution. Got correct
 - [X] Challenge solved
