@@ -26,3 +26,11 @@ As of September 17<sup>th</sup>, 2018 :
 - [X] Find a fourth working solution on the sample input with hints
 - [X] Submitted solution. Got Correct. Solved in O(n)
 - [X] Challenge solved
+
+## Find the Point
+This is a mathematics challenge from hackerrank. The goal is to find the 180-symetric of a given point p accross another given point q.  
+I tried to solve this problem using the C language [Problem link](https://www.hackerrank.com/challenges/find-point/problem).  
+As of October 2<sup>nd</sup>, 2018 :
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got correct
+- [X] Challenge solved
