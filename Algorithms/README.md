@@ -164,6 +164,14 @@ As of September 18<sup>th</sup>, 2018:
 - [X] Find a second working solution on the sample input. Used disjoint sets to count the number of connected components
 - [X] Submit solution. Got Correct
 - [X] Challenge solved.
+
+### BFS: Shortest Reach in a Graph
+This is a graph theory challenge from hackerrank. The goal is to implement a graph class with a method that computes shortest distance between a given source and every other node in the graph. The algorithm to be used is BFS. The given graph is undirected and each edge has a weight of 6.  
+I tried to solve this problem with the C++ languages [Problem link](https://www.hackerrank.com/challenges/ctci-bfs-shortest-reach/problem).  
+As of October 5<sup>th</sup>, 2018:
+- [X] Find a first working solution on the sample input
+- [X] Submit solution. Got correct
+- [X] Challenge solved.
 </details>
 
 ## Search
