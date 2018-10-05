@@ -192,6 +192,20 @@ As of September 10<sup>th</sup>, 2018 :
 - [X] Challenge solved
 </details>
 
+## Sorting
+<details>
+<summary>The following subsection contains description of all problems relating to sorting algorithms</summary>
+
+
+### Sorting: Bubble sort
+This is a sorting challenge from hackerrank. The goal is to count the number of swaps made by the bubble sort algorithm when sorting a given array.  
+I solved this problem with the C++ languages [Problem link](https://www.hackerrank.com/challenges/ctci-bubble-sort/problem)  
+As of October 5<sup>th</sup>, 2018 :
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got right
+- [X] Challenge solved
+</details>
+
 ## Others
 
 ### Max-Min
