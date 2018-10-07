@@ -94,7 +94,56 @@ class Graph {
             
             return distance;
         }
-    
+
+        vector<int> shortest_reach_dijkstra(int start) {
+            //printf("Start is %d\n", start);
+            
+            auto q = vector<int>();
+            auto distance = vector<int>(number_of_nodes);
+            auto visited = unordered_set<int>();
+            
+            for(auto i = 0 ; i < number_of_nodes ; ++i)
+            {
+                distance[i] = -1;
+            }
+            
+            distance[start] = 0;
+            visited.insert(start);
+            q.push_back(start);
+            
+            while(!q.empty())
+            {
+                auto it_min = min_element(q.begin(),
+                    q.end(),
+                    [&distance](const int a, const int b) -> bool {
+                        return distance[a] == - 1 ? false : distance[a] < distance[b];
+                    });
+                iter_swap(it_min, q.end() - 1);
+                auto cur = q.back();
+                q.pop_back();
+                
+                //printf("Studying node %d now.\n", cur);
+                
+                auto children = *edges.find(cur);             
+                
+                //printf("Children are: ");
+                
+                for(auto x: children.second)
+                {
+                    //printf("%d ", x);
+                    if(visited.find(x) == visited.cend())
+                    {
+                        visited.insert(x);
+                        distance[x] = distance[cur] + 6;
+                        q.push_back(x);
+                    }
+                }
+                
+                //printf("\n");
+            }
+            
+            return distance;
+        }
 };
 
 inline void fastscan(int &number)
@@ -154,7 +203,7 @@ int main()
         int s;
         fastscan(s);
 
-        auto res = g.shortest_reach(--s);
+        auto res = g.shortest_reach_dijkstra(--s);
         for(auto i = 0 ; i < n ; ++i)
         {
             if(s != i)
