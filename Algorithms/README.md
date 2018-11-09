@@ -172,7 +172,7 @@ As of October 5<sup>th</sup>, 2018:
 - [X] Find a first working solution on the sample input
 - [X] Submit solution. Got correct
 - [X] Implement a Dijsktra Algo to optimize things
-- [X] Challenge solved.
+- [X] Challenge solved.g
 
 ### Matrix
 This is a graph theory challenge from hackerrank. The goal is to compute the minimum time it will take to stop machines from attacking. Machines will attack a city (ie: a node of the graph) if they can join forces in said city. In other words a city will be attacked if there are roads that link it to at least two other cities invaded by machines.  
