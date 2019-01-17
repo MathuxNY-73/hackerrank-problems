@@ -46,9 +46,18 @@ As of September 14<sup>th</sup>, 2018 :
 - [X] Challenge solved
 
 ### Filter Position In A List
-This is a Functional Programming challenge from hackerrank. The goal is simply to implement a function that filters out the elements that at an odd index.  
+This is a Functional Programming challenge from hackerrank. The goal is simply to implement a function that creates a new array of n elements for a given n.  
 I solved this problem with the scala languages [Problem link](https://www.hackerrank.com/challenges/fp-filter-positions-in-a-list/problem)  
 As of October 2<sup>nd</sup>, 2018 :
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got right
+- [X] Challenge solved
+</details>
+
+### Array of N elements
+This is a Functional Programming challenge from hackerrank. The goal is simply to implement a function that filters out the elements that at an odd index.  
+I solved this problem with the scala languages [Problem link](https://www.hackerrank.com/challenges/fp-array-of-n-elements/problem)  
+As of January 16<sup>th</sup>, 2019 :
 - [X] Find a first working solution on the sample input
 - [X] Submitted solution. Got right
 - [X] Challenge solved
