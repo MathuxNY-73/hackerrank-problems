@@ -74,4 +74,12 @@ As of August 31<sup>st</sup>, 2018 :
 - [X] Find a first working solution on the sample input
 - [X] Submitted solution. Got right
 - [X] Challenge solved
+
+### Variable sized arrays 
+This is a C++ challenge from hackerrank. The goal is to play with 2d variable size arrays and answer queries passed in input.  
+I solved this problem with the C++ languages [Problem link](https://www.hackerrank.com/challenges/variable-sized-arrays/problem)  
+As of February 28<sup>th</sup>, 2019 :
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got right
+- [X] Challenge solved
 </details>
