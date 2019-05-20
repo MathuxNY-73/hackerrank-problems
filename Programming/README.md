@@ -93,4 +93,12 @@ As of February 28<sup>th</sup>, 2019 :
 - [X] Find a first working solution on the sample input
 - [X] Submitted solution. Got right
 - [X] Challenge solved
+
+### Abstract classes - polymorphism
+This is a C++ challenge from hackerrank. The goal is to create a Derived LRUCache cache implementing the Base Cache class. This implementation will of course implement a Least Recently Used Cache.  
+I solved this problem with the C++ languages [Problem link](https://www.hackerrank.com/challenges/abstract-classes-polymorphism/problem)  
+As of March 6<sup>th</sup>, 2019 :
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got right
+- [X] Challenge solved
 </details>
