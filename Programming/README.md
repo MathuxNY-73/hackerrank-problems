@@ -64,6 +64,14 @@ As of May 20<sup>th</sup>, 2019 :
 - [X] Challenge solved
 - [X] Find a working solution in Lisp
 - [X] Challenge solved in Lisp
+
+### Reverse a list
+This is a Functional Programming challenge from hackerrank. The goal is to implement a function that reverses the order of the elements of a list passed to program.  
+I solved this problem with the Lisp language [Problem link](https://www.hackerrank.com/challenges/fp-reverse-a-list/problem)  
+As of May 20<sup>th</sup>, 2019 :
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got right
+- [X] Challenge solved
 </details>
 
 ## C++
