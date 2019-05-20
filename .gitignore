@@ -42,3 +42,5 @@
 # Scala
 project/**/*
 target/**/*
+
+.DS_Store

@@ -52,15 +52,16 @@ As of October 2<sup>nd</sup>, 2018 :
 - [X] Find a first working solution on the sample input
 - [X] Submitted solution. Got right
 - [X] Challenge solved
-</details>
 
 ### Array of N elements
 This is a Functional Programming challenge from hackerrank. The goal is simply to implement a function that filters out the elements that at an odd index.  
-I solved this problem with the scala languages [Problem link](https://www.hackerrank.com/challenges/fp-array-of-n-elements/problem)  
-As of January 16<sup>th</sup>, 2019 :
+I solved this problem with the scala and lisp languages [Problem link](https://www.hackerrank.com/challenges/fp-array-of-n-elements/problem)  
+As of May 20<sup>th</sup>, 2019 :
 - [X] Find a first working solution on the sample input
 - [X] Submitted solution. Got right
 - [X] Challenge solved
+- [X] Find a working solution in Lisp
+- [X] Challenge solved in Lisp
 </details>
 
 ## C++
