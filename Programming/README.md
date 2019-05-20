@@ -3,15 +3,17 @@ This repository contains all problems I solved from the hackerrank website regar
 
 ## Functional Programming (scala)
 <details>
-<summary>The following subsection contains description of all problems relating to the Functional Programming mainly solved in scala</summary>
+<summary>The following subsection contains description of all problems relating to the Functional Programming mainly solved in scala and Lisp</summary>
 
 ### Solve Me First FP
 This is a Functional Programming challenge from hackerrank. The goal is simply to implement the addition of two numbers read from input.  
-I solved this problem with the scala languages [Problem link](https://www.hackerrank.com/challenges/fp-solve-me-first/problem)  
-As of September 1<sup>st</sup>, 2018 :
+I solved this problem with the scala and lisp languages [Problem link](https://www.hackerrank.com/challenges/fp-solve-me-first/problem)  
+As of May 20<sup>th</sup>, 2019 :
 - [X] Find a first working solution on the sample input
 - [X] Submitted solution. Got right
 - [X] Challenge solved
+- [X] Find a working solution in Lisp
+- [X] Challenge solved in Lisp
 
 ### Hello World
 This is a Functional Programming challenge from hackerrank. The goal is simply to implement a function that prints "Hello World".  
