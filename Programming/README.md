@@ -5,6 +5,8 @@ This repository contains all problems I solved from the hackerrank website regar
 <details>
 <summary>The following subsection contains description of all problems relating to the Functional Programming mainly solved in scala and Lisp</summary>
 
+**Note:** To test Lisp code use the following command `sbcl --script main.lisp < test.in`
+
 ### Solve Me First FP
 This is a Functional Programming challenge from hackerrank. The goal is simply to implement the addition of two numbers read from input.  
 I solved this problem with the scala and lisp languages [Problem link](https://www.hackerrank.com/challenges/fp-solve-me-first/problem)  
