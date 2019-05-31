@@ -74,6 +74,14 @@ As of May 20<sup>th</sup>, 2019 :
 - [X] Find a first working solution on the sample input
 - [X] Submitted solution. Got right
 - [X] Challenge solved
+
+### Sum of odd elements
+This is a Functional Programming challenge from hackerrank. The goal is to implement a function that sums up all the odd elements of a given list.  
+I solved this problem with the Lisp language [Problem link](https://www.hackerrank.com/challenges/fp-sum-of-odd-elements/problem)  
+As of May 31<sup>st</sup>, 2019:
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got right
+- [X] Challenge solved
 </details>
 
 ## C++
