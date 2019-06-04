@@ -29,7 +29,7 @@ As of September 17<sup>th</sup>, 2018 :
 
 ## Find the Point
 This is a mathematics challenge from hackerrank. The goal is to find the 180-symetric of a given point p accross another given point q.  
-I tried to solve this problem using the C and Scala language [Problem link](https://www.hackerrank.com/challenges/find-point/problem).  
+I tried to solve this problem using the C and Scala languages [Problem link](https://www.hackerrank.com/challenges/find-point/problem).  
 As of October 3<sup>rd</sup>, 2018 :
 - [X] Find a first working solution on the sample input
 - [X] Submitted solution. Got correct
@@ -37,12 +37,22 @@ As of October 3<sup>rd</sup>, 2018 :
 
 ## Constructing a Number
 This is a mathematics challenge from hackerrank. The goal is to determine if it is possible to construct a number that is divisible by 3 from a list of given integers by reordering their digits and using all of those digits.  
-I tried to solve this problem using the C and Scala language [Problem link](https://www.hackerrank.com/challenges/constructing-a-number/problem).  
+I tried to solve this problem using the C and Scala languages [Problem link](https://www.hackerrank.com/challenges/constructing-a-number/problem).  
 As of October 3<sup>rd</sup>, 2018 :
 - [X] Find a first working solution on the sample input
 - [X] Submitted solution. Got correct
 - [X] Find a second working solution on the sample input
 - [X] Submitted solution. Got correct
 - [X] Find a third working solution on the sample input in Scala
+- [X] Submitted solution. Got correct
+- [X] Challenge solved
+
+## Summing the N series
+This is a mathematics challenge from hackerrank. The goal is to determine the value of the Serie Sn = T1 + T2 + ... + Tn with Tn = n^2 - (n - 1)^2. Since results can be pretty big answer is given module 10^9 + 7.  
+I tried to solve this problem using the C language [Problem link](https://www.hackerrank.com/challenges/summing-the-n-series/problem).  
+As of June 4<sup>th</sup>, 2019 :
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got wrong answer
+- [X] Corrected the problem of large integers. Use fmodl and powl instead of % and pow
 - [X] Submitted solution. Got correct
 - [X] Challenge solved
