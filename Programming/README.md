@@ -119,4 +119,12 @@ As of March 6<sup>th</sup>, 2019 :
 - [X] Find a first working solution on the sample input
 - [X] Submitted solution. Got right
 - [X] Challenge solved
+
+### Maps-STL
+This is a C++ challenge from hackerank. The goal is to learn how to use the Map of the STL in order to implement a grade system for a teacher of a class.  
+I solved this problem with the C++ language [Problem link](https://www.hackerrank.com/challenges/cpp-maps/problem)  
+As of July 3<sup>rd</sup>, 2019:
+- [X] Find a first working solution on the sample input (weirdly it works correctly when I run it on my computer, but not on the Hackerrank website)
+- [X] Submitted solution. Got right
+- [X] Challenge solved
 </details>
