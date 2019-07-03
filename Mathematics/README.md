@@ -56,3 +56,11 @@ As of June 4<sup>th</sup>, 2019 :
 - [X] Corrected the problem of large integers. Use fmodl and powl instead of % and pow
 - [X] Submitted solution. Got correct
 - [X] Challenge solved
+
+## Maximum draws
+This is a mathematics challenge from hackerrank. The goal is to output the minimum number of draws from a sock drawer containing n pairs of socks in order to have a least one matching pair of socks.  
+I solved this problem using the C language [Problem link](https://www.hackerrank.com/challenges/maximum-draws/problem).  
+As of July 3<sup>rd</sup>, 2019 :
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got right answer
+- [X] Challenge solved
