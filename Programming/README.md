@@ -82,6 +82,14 @@ As of May 31<sup>st</sup>, 2019:
 - [X] Find a first working solution on the sample input
 - [X] Submitted solution. Got right
 - [X] Challenge solved
+
+### List length
+This is a Functional Programming challenge from hackerrank. The goal is to implement a function that compute the length of a given list.  
+I solved this problem with the Lisp language [Problem link](https://www.hackerrank.com/challenges/fp-list-length/problem)  
+As of July 2<sup>2</sup>, 2019:
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got right
+- [X] Challenge solved
 </details>
 
 ## C++
