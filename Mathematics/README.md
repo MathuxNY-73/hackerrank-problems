@@ -64,3 +64,13 @@ As of July 3<sup>rd</sup>, 2019 :
 - [X] Find a first working solution on the sample input
 - [X] Submitted solution. Got right answer
 - [X] Challenge solved
+
+## K Candy Store
+This is a mathematics challenge from hackerrank. The goal is to compute the mumber of k-combinations of n sets of candies.  
+I solved this problem using the C language [Problem link](https://www.hackerrank.com/challenges/k-candy-store/problem).  
+As of July 5<sup>th</sup>, 2019 :
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got wrong answer.
+- [X] Find a second working solution on the sample input
+- [X] Submitted solution. Got right answer.
+- [X] Challenge solve
