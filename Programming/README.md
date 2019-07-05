@@ -134,6 +134,6 @@ I solved this problem with the C++ language [Problem link](https://www.hackerran
 As of July 5<sup>th</sup>, 2019:
 - [X] Find a first working solution on the sample input. 
 - [X] Solution not submittable as I have to use the provided code.
-- [ ] Find a new working solution on the sample input.
-- [ ] Challenge solved
+- [x] Find a new working solution on the sample input.
+- [x] Challenge solved
 </details>
