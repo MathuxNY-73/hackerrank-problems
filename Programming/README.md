@@ -127,4 +127,13 @@ As of July 3<sup>rd</sup>, 2019:
 - [X] Find a first working solution on the sample input (weirdly it works correctly when I run it on my computer, but not on the Hackerrank website)
 - [X] Submitted solution. Got right
 - [X] Challenge solved
+
+### Operator Overloading
+This is a C++ challenge from hackerank. The goal is to lern how to overload an operator by implementing the addition of Matrix with a Matrix class overloading the + operator.  
+I solved this problem with the C++ language [Problem link](https://www.hackerrank.com/challenges/operator-overloading/problem)  
+As of July 5<sup>th</sup>, 2019:
+- [X] Find a first working solution on the sample input. 
+- [X] Solution not submittable as I have to use the provided code.
+- [ ] Find a new working solution on the sample input.
+- [ ] Challenge solved
 </details>
