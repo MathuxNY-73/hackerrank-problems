@@ -34,6 +34,26 @@ unsigned long long int* solve(int n, int k) {
     return res[(k+n-1)%2];
 }
 
+unsigned long long int solve_dp(int n, int k) {
+    int base = pow(10,9);
+    unsigned long long int res[k+1][n];
+
+    for(int i = 0 ; i < n ; ++i)
+    {
+        res[0][i] = 1;
+    }
+
+    for(int i = 1 ; i<k+1 ; ++i)
+    {
+        for(int j = 0 ; j < n ; ++j)
+        {
+            res[i][j] = fmodl(res[i-1][j] + (j > 0 ? res[i][j-1] : 0), base);
+        }
+    }
+
+    return res[k][n-1];
+}
+
 void fastscan_int(int* number)
 {
     //variable to indicate sign of input number
@@ -74,10 +94,16 @@ int main()
         int n = 0, k = 0;
         fastscan_int(&n);
         fastscan_int(&k);
+        /*
         unsigned long long int* result = solve(n, k);
 
         printf("%llu\n", result[k]);
         free(result);
+        */
+
+        unsigned long long int result = solve_dp(n, k);
+
+        printf("%llu\n", result);
     }
 
     return 0;

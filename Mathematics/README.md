@@ -74,3 +74,5 @@ As of July 5<sup>th</sup>, 2019 :
 - [X] Find a second working solution on the sample input
 - [X] Submitted solution. Got right answer.
 - [X] Challenge solve
+- [X] Find a third working solution that uses DP
+- [X] Submitted DP solution. Got right.
