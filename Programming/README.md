@@ -92,6 +92,11 @@ As of July 2<sup>2</sup>, 2019:
 - [X] Challenge solved
 </details>
 
+## C
+<details>
+<summary>The following subsection contains description of all problems relating to the C language</summary>
+</details>
+
 ## C++
 <details>
 <summary>The following subsection contains description of all problems relating to the C++ language</summary>
@@ -136,4 +141,9 @@ As of July 5<sup>th</sup>, 2019:
 - [X] Solution not submittable as I have to use the provided code.
 - [x] Find a new working solution on the sample input.
 - [x] Challenge solved
+</details>
+
+## Python
+<details>
+<summary>The following subsection contains description of all problems relating to the Python language</summary>
 </details>
