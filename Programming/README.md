@@ -95,6 +95,14 @@ As of July 2<sup>2</sup>, 2019:
 ## C
 <details>
 <summary>The following subsection contains description of all problems relating to the C language</summary>
+
+### "Hello World!" in C
+This is a C challenge from hackerrank. The goal is simply to print "Hello World!" before printing what was read from STDIN.  
+I solved this problem with the C language [Problem link](https://www.hackerrank.com/challenges/hello-world-c/problem)  
+As of July 6<sup>th</sup>, 2019:
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got right
+- [X] Challenge solved
 </details>
 
 ## C++
