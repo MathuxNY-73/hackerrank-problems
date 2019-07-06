@@ -142,7 +142,7 @@ As of July 3<sup>rd</sup>, 2019:
 - [X] Challenge solved
 
 ### Operator Overloading
-This is a C++ challenge from hackerank. The goal is to lern how to overload an operator by implementing the addition of Matrix with a Matrix class overloading the + operator.  
+This is a C++ challenge from hackerank. The goal is to learn how to overload an operator by implementing the addition of Matrix with a Matrix class overloading the + operator.  
 I solved this problem with the C++ language [Problem link](https://www.hackerrank.com/challenges/operator-overloading/problem)  
 As of July 5<sup>th</sup>, 2019:
 - [X] Find a first working solution on the sample input. 
@@ -154,4 +154,13 @@ As of July 5<sup>th</sup>, 2019:
 ## Python
 <details>
 <summary>The following subsection contains description of all problems relating to the Python language</summary>
+
+### List Comprehensions
+This is a Python challenge from hackerank. The goal is to output all 3-tuples (i,j,k) where (i,j,k) is not equal to a given n. The implementation should use list comprehensions.  
+I solved this problem with the Python3 language [Problem link](https://www.hackerrank.com/challenges/list-comprehensions/problem)  
+As of July 6<sup>th</sup>, 2019:
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got right
+- [X] Challenge solved
 </details>
+
