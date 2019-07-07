@@ -103,6 +103,15 @@ As of July 6<sup>th</sup>, 2019:
 - [X] Find a first working solution on the sample input
 - [X] Submitted solution. Got right
 - [X] Challenge solved
+
+### Playing with Character
+This is a C challenge from hackerank. The goal is simply to take a character, a string and a sentence as inputs and print them on STDOUT.  
+I solved this problem with the C language [Problem link](https://www.hackerrank.com/challenges/playing-with-characters/problem)  
+As of July 7<sup>th</sup>, 2019:
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got right
+- [X] Challenge solved
+
 </details>
 
 ## C++
