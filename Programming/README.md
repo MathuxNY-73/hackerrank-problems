@@ -112,6 +112,13 @@ As of July 7<sup>th</sup>, 2019:
 - [X] Submitted solution. Got right
 - [X] Challenge solved
 
+### Functions in C
+This is a C challenge from hackerank. The goal is to implement a function that takes in 4 integers and returns the max of those 4 integers.  
+I solved this problem with the C language [Problem link](https://www.hackerrank.com/challenges/functions-in-c/problem)  
+As of July 7<sup>th</sup>, 2019:
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got right
+- [X] Challenge solved
 </details>
 
 ## C++
