@@ -76,3 +76,11 @@ As of July 5<sup>th</sup>, 2019 :
 - [X] Challenge solve
 - [X] Find a third working solution that uses DP
 - [X] Submitted DP solution. Got right.
+
+## Handshake
+This is a mathematics challenge from hackerank. The goal is to compute the number of handshakes performed at a meeting of N people, knowing that everyone will shake every other's hand.  
+I solved this problem using the C language [Problem link](https://www.hackerrank.com/challenges/handshake/problem).  
+As of July 8<sup>th</sup>, 2019:
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got right answer
+- [X] Challenge solved
