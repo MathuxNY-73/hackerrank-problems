@@ -173,6 +173,14 @@ As of July 5<sup>th</sup>, 2019:
 - [X] Solution not submittable as I have to use the provided code.
 - [x] Find a new working solution on the sample input.
 - [x] Challenge solved
+
+### C++ Variadics
+This is a C++ challenge from hackerank. The goal is to learn how to use template variadics by implementing a function that takes in a variable number of bits and return the integer value corresponding to the reversed bits.  
+I solved this problem with the C++ language [Problem link](https://www.hackerrank.com/challenges/cpp-variadics/problem)  
+As of July 8<sup>th</sup>, 2019:
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got right
+- [X] Challenge solved
 </details>
 
 ## Python
