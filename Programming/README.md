@@ -181,6 +181,14 @@ As of July 8<sup>th</sup>, 2019:
 - [X] Find a first working solution on the sample input
 - [X] Submitted solution. Got right
 - [X] Challenge solved
+
+### Preprocessor solution
+This is a C++ challenge from hackerank. The goal is to implement preprocessor MACROS to make a given code work.  
+I solved this problem with the C++ language [Problem link](https://www.hackerrank.com/challenges/preprocessor-solution/problem)  
+As of July 15<sup>th</sup>, 2019:
+- [X] Find a first working solution on the sample input
+- [X] Submitted solution. Got right
+- [X] Challenge solved
 </details>
 
 ## Python
