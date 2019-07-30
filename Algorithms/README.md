@@ -323,3 +323,11 @@ As of June 28<sup>th</sup>, 2018:
 - [X] Find a first working solution on the sample input
 - [X] Submit first solution. Got correct
 - [X] Problem solved
+
+### Fibonacci Numbers
+This is interview preparation challenge from hackerrank. The goal is to use recursion in order to find the n<sup>th</sup> Fibonacci number.  
+I solved this problem using the C language. [Problem link](https://www.hackerrank.com/challenges/ctci-fibonacci-numbers/problem)  
+As July 30<sup>th</sup>, 2019:
+- [x] Find a first working solution on the sample input
+- [x] Submit first solution. Got correct
+- [x] Problem solved
