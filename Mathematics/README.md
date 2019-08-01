@@ -94,3 +94,11 @@ As July 16<sup>th</sup>, 2019:
 - [X] Fix solution with Fermat's little theorem.
 - [X] Submitted solution. Got right answer
 - [X] Challenge solved
+
+## Halloween Party
+This is mathematics fundamental challenge from hackerrank. The goal is to compute the maximum number of 1x1 chocolate squares that one could cut from an infinite chocolate table using exactly K cuts.  
+I solved this problem using the C language [Problem link](https://www.hackerrank.com/challenges/halloween-party/problem)  
+As of August 1<sup>st</sup>, 2019:
+- [x] Find a first working solution on the sample input
+- [x] Submitted solution. Got correct
+- [x] Challenge solved
