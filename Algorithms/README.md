@@ -112,6 +112,14 @@ As of September 9<sup>th</sup>, 2018:
 - [X] Find a second working solution on the sample input
 - [X] Submit second solution. Got correct
 - [X] Problem solved
+
+### The Indian Job
+This is a dynamic programming challenge from hackerank. The goal is to check that it is possible to arrange N thieves such that each can spend A[i] minutes in a vault before a guard returns after G minutes. There can be up to 2 thieves at a time in the vault.  
+I try to solve this problem using the C++ language. [Problem link](https://www.hackerrank.com/challenges/the-indian-job/problem)  
+As of September 10<sup>th</sup>, 2019:
+- [x] Find a first working solution on the sample input
+- [x] Submit solution. Got correct
+- [x] Problem solved
 </details>
 
 ## Graph Theory
