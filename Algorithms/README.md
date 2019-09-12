@@ -120,6 +120,16 @@ As of September 10<sup>th</sup>, 2019:
 - [x] Find a first working solution on the sample input
 - [x] Submit solution. Got correct
 - [x] Problem solved
+
+### Knapsack
+This is a dynamic programming challenge from hackerank. The goal was to determine the closest sum smaller or equal to a given integer N, that it is possible to do with a given set of coins.  
+I try to solve this problem using the C++ language. [Problem link](https://www.hackerrank.com/challenges/unbounded-knapsack/problem)  
+As of September 12<sup>th</sup>, 2019:
+- [x] Find a first working solution on the sample input
+- [x] Submit solution. Got correct
+- [ ] Find a second solution.
+- [ ] Submit solution.
+- [x] Problem solved
 </details>
 
 ## Graph Theory
