@@ -127,8 +127,8 @@ I try to solve this problem using the C++ language. [Problem link](https://www.h
 As of September 12<sup>th</sup>, 2019:
 - [x] Find a first working solution on the sample input
 - [x] Submit solution. Got correct
-- [ ] Find a second solution.
-- [ ] Submit solution.
+- [x] Find a second solution.
+- [x] Submit solution. Got correct
 - [x] Problem solved
 </details>
 

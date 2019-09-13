@@ -35,15 +35,11 @@ class Solution {
 public:
     static int unboundedKnapsack(int k, const vector<int>& arr) {
         memset(dp, 0, sizeof(dp));
-        dp[0] = 1;
 
         for(auto& c :arr) {
             for(int i = c; i <= k ; ++i) {
                 //printf("c: %d, i: %d, dp[%d]=%d, dp[%d]=%d\n", c,i,i,dp[i], i-c, dp[i-c]);
-                dp[i] = max(dp[i],dp[i-c]);
-                if(i == k && dp[i]) {
-                    return k;
-                }
+                dp[i] = max(dp[i],c + dp[i-c]);
             }
         }
 
@@ -53,11 +49,7 @@ public:
         //}
         //printf("\n");
 
-        int i = k;
-        while(i >= 0 && !dp[i]) {
-            --i;
-        }
-        return i;
+        return dp[k];
     }
 };
 
