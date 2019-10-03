@@ -1,4 +1,4 @@
-cd #include <cassert>
+#include <cassert>
 #include <cmath>
 #include <cstdio>
 #include <cstdlib>
@@ -38,30 +38,45 @@ static const auto _____ = []()
 
 int main()
 {
-    int N = 0;
-    cin >> N;
-    int size = 3 * N - 2;
-    int empty = 2 * (N - 1) / 2;
-    for(int i = 0 ; i < size ; ++i) {
-        for(int j = 0 ; j < size; ++j) {
-            if((i == 0 || i == size - 1) && (j >= empty && j < empty + N)) {
-                cout << "X";
-            }
-            else if((i == empty || i == empty + N - 1) && ((j >= 0 && j < N) || (j >= (size - N) && j < size))) {
-                cout << "X";
-            }
-            else if ((i >= empty && i < empty + N) && (j == 0 || j == size - 1)) {
-                cout << "X";
-            }
-            else if((i < empty || i >= empty + N) && (j == empty || j == empty + N - 1)) {
-                cout << "X"; 
-            }
-            else {
-                cout << ".";
+    int N = 0, I = 0;
+    cin >> N >> I;
+
+    int bank = I, cnt = 0;
+
+    cout << "bank: " << bank << "\n";
+
+    while(N--) {
+        int M = 0, R = 0;
+        string Q = "\0";
+
+        cin >> M >> Q >> R;
+
+        cout << "M: " << M << " Q: " << Q << " R: " << R << "\n";
+
+        bank -= M;
+
+        if(Q == "P" && (!(R & 1) && R != 0)) {
+            bank += 2*M;
+        }
+        else if (Q == "I" && (R&1)) {
+            bank += 2*M;
+        }
+        else if(Q != "P" && Q != "I") {
+            int q = stoi(Q);
+            if(R == q) {
+                bank += 36 * M;
             }
         }
-        cout << "\n";
+
+        cout << bank << "\n";
+
+        if(bank <= 0) {
+            cout << "RACHAT\n";
+            ++cnt;
+            bank = I;
+        }
     }
 
+    cout << cnt << "\n";
     return 0;
 }
