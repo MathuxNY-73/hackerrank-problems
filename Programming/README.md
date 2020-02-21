@@ -1,7 +1,7 @@
 # Hackerrank Progamming
 This repository contains all problems I solved from the hackerrank website regarding languages and programming paradigms
 
-## Functional Programming (scala)
+## Functional Programming (scala, lisp)
 <details>
 <summary>The following subsection contains description of all problems relating to the Functional Programming mainly solved in scala and Lisp</summary>
 
@@ -204,3 +204,18 @@ As of July 6<sup>th</sup>, 2019:
 - [X] Challenge solved
 </details>
 
+## SQL
+<details>
+<summary>The following subsection contains description of all problems relating
+to the MySQL language</summary>
+
+### African Cities
+This is a SQL challenge from hackerank. The goal is to create a request to
+retrieve all cities in the database that are from the African Continent.  
+I tried to solve this problem with the MySQL language [Problem
+link](https://www.hackerrank.com/challenges/african-cities/problem)  
+As of February 21<sup>st</sup>, 2020:
+- [X] Find a working solution on the sample input
+- [X] Submitted solution. Got correct
+- [X] Challenge solved
+</details>
