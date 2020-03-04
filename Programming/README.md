@@ -218,4 +218,15 @@ As of February 21<sup>st</sup>, 2020:
 - [X] Find a working solution on the sample input
 - [X] Submitted solution. Got correct
 - [X] Challenge solved
+
+### Average population of each Continent
+This is a SQL challenge from hackerank. The goal is to create a request to
+retrieve the average city population on each Continent rounded down to the
+nearest integer.  
+I tried to solve this problem with the MySQL language [Problem
+link](https://www.hackerrank.com/challenges/average-population-of-each-continent/problem)  
+As of March 4<sup>th</sup>, 2020:
+- [X] Find a working solution on the sample input
+- [X] Submitted solution. Got correct
+- [X] Challenge solved
 </details>
