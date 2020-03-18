@@ -269,4 +269,95 @@ As of March 18<sup>th</sup>, 2020:
 - [X] Find a working solution on the sample input
 - [X] Submitted solution. Got correct
 - [X] Challenge solved
+
+### Japanese city attributes
+This is a SQL challenge from hackerank. The goal is to query all columns of
+every Japanese cities from a CITY table.  
+I tried to solve this problem with the MySQL language [Problem
+link](https://www.hackerrank.com/challenges/japanese-cities-attributes/problem)  
+As of March 18<sup>th</sup>, 2020:
+- [X] Find a working solution on the sample input
+- [X] Submitted solution. Got correct
+- [X] Challenge solved
+
+### Japanese city names
+This is a SQL challenge from hackerank. The goal is to query the names of
+every Japanese cities from a CITY table.  
+I tried to solve this problem with the MySQL language [Problem
+link](https://www.hackerrank.com/challenges/japanese-cities-attributes/problem)  
+As of March 18<sup>th</sup>, 2020:
+- [X] Find a working solution on the sample input
+- [X] Submitted solution. Got correct
+- [X] Challenge solved
+
+### Weather observation station 1
+This is a SQL challenge from hackerank. The goal is to query cities and stations
+from a STATION table.  
+I tried to solve this problem with the MySQL language [Problem
+link](https://www.hackerrank.com/challenges/weather-observation-station-1/problem)  
+As of March 18<sup>th</sup>, 2020:
+- [X] Find a working solution on the sample input
+- [X] Submitted solution. Got correct
+- [X] Challenge solved
+
+### Weather observation station 3
+This is a SQL challenge from hackerank. The goal is to query distinct cities
+from a STATION table where station id is even.  
+I tried to solve this problem with the MySQL language [Problem
+link](https://www.hackerrank.com/challenges/weather-observation-station-3/problem)  
+As of March 18<sup>th</sup>, 2020:
+- [X] Find a working solution on the sample input
+- [X] Submitted solution. Got correct
+- [X] Challenge solved
+
+### Weather observation station 4
+This is a SQL challenge from hackerank. The goal is to query the difference
+between the total number of cities and the number of distinct cities from a
+STATION table where station id is even.  
+I tried to solve this problem with the MySQL language [Problem
+link](https://www.hackerrank.com/challenges/weather-observation-station-4/problem)  
+As of March 18<sup>th</sup>, 2020:
+- [X] Find a working solution on the sample input
+- [X] Submitted solution. Got correct
+- [X] Challenge solved
+
+### Weather observation station 5
+This is a SQL challenge from hackerank. The goal is to query the cities with the
+shortest and longest names with their respective length from a STATION table.  
+I tried to solve this problem with the MySQL language [Problem
+link](https://www.hackerrank.com/challenges/weather-observation-station-5/problem)  
+As of March 18<sup>th</sup>, 2020:
+- [X] Find a working solution on the sample input
+- [X] Submitted solution. Got correct
+- [X] Challenge solved
+
+### Weather observation station 6
+This is a SQL challenge from hackerank. The goal is to query the cities whose
+name starts with a vowel.  
+I tried to solve this problem with the MySQL language [Problem
+link](https://www.hackerrank.com/challenges/weather-observation-station-6/problem)  
+As of March 18<sup>th</sup>, 2020:
+- [X] Find a working solution on the sample input
+- [X] Submitted solution. Got correct
+- [X] Challenge solved
+
+### Weather observation station 7
+This is a SQL challenge from hackerank. The goal is to query the cities whose
+name ends with a vowel without duplicates.  
+I tried to solve this problem with the MySQL language [Problem
+link](https://www.hackerrank.com/challenges/weather-observation-station-7/problem)  
+As of March 18<sup>th</sup>, 2020:
+- [X] Find a working solution on the sample input
+- [X] Submitted solution. Got correct
+- [X] Challenge solved
+
+### Weather observation station 8
+This is a SQL challenge from hackerank. The goal is to query the cities whose
+name starts and ends with a vowel without duplicates.  
+I tried to solve this problem with the MySQL language [Problem
+link](https://www.hackerrank.com/challenges/weather-observation-station-8/problem)  
+As of March 18<sup>th</sup>, 2020:
+- [X] Find a working solution on the sample input
+- [X] Submitted solution. Got correct
+- [X] Challenge solved
 </details>
