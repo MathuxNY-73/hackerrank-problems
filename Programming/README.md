@@ -229,4 +229,44 @@ As of March 4<sup>th</sup>, 2020:
 - [X] Find a working solution on the sample input
 - [X] Submitted solution. Got correct
 - [X] Challenge solved
+
+### Revising the select query I
+This is a SQL challenge from hackerank. The goal is to simply query all columns
+for American cities with population higher than 100000 from a single CITY table.  
+I tried to solve this problem with the MySQL language [Problem
+link](https://www.hackerrank.com/challenges/revising-the-select-query/problem)  
+As of March 18<sup>th</sup>, 2020:
+- [X] Find a working solution on the sample input
+- [X] Submitted solution. Got correct
+- [X] Challenge solved
+
+### Revising the select query II
+This is a SQL challenge from hackerank. The goal is to simply query the names of
+American cities with population higher than 120000 from a single CITY table.  
+I tried to solve this problem with the MySQL language [Problem
+link](https://www.hackerrank.com/challenges/revising-the-select-query-2/problem)  
+As of March 18<sup>th</sup>, 2020:
+- [X] Find a working solution on the sample input
+- [X] Submitted solution. Got correct
+- [X] Challenge solved
+
+### Select all
+This is a SQL challenge from hackerank. The goal is to simply query all columns
+from a single CITY table.  
+I tried to solve this problem with the MySQL language [Problem
+link](https://www.hackerrank.com/challenges/select-all-sql/problem)  
+As of March 18<sup>th</sup>, 2020:
+- [X] Find a working solution on the sample input
+- [X] Submitted solution. Got correct
+- [X] Challenge solved
+
+### Select by ID
+This is a SQL challenge from hackerank. The goal is to simply query all columns
+of a city identifies by its ID from a single CITY table.  
+I tried to solve this problem with the MySQL language [Problem
+link](https://www.hackerrank.com/challenges/select-by-id/problem)  
+As of March 18<sup>th</sup>, 2020:
+- [X] Find a working solution on the sample input
+- [X] Submitted solution. Got correct
+- [X] Challenge solved
 </details>

@@ -1,0 +1,2 @@
+SELECT c.*
+FROM CITY AS c;
