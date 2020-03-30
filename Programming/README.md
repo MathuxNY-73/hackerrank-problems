@@ -360,4 +360,44 @@ As of March 18<sup>th</sup>, 2020:
 - [X] Find a working solution on the sample input
 - [X] Submitted solution. Got correct
 - [X] Challenge solved
+
+### Weather observation station 9
+This is a SQL challenge from hackerank. The goal is to query the whose name does
+not start with a vowel without duplicates.  
+I tried to solve this problem with the MySQL language [Problem
+link](https://www.hackerrank.com/challenges/weather-observation-station-9/problem)  
+As of March 30<sup>th</sup>, 2020:
+- [X] Find a working solution on the sample input
+- [X] Submitted solution. Got correct
+- [X] Challenge solved
+
+### Weather observation station 10
+This is a SQL challenge from hackerank. The goal is to query the whose name does
+not end with a vowel without duplicates.  
+I tried to solve this problem with the MySQL language [Problem
+link](https://www.hackerrank.com/challenges/weather-observation-station-10/problem)  
+As of March 30<sup>th</sup>, 2020:
+- [X] Find a working solution on the sample input
+- [X] Submitted solution. Got correct
+- [X] Challenge solved
+
+### Weather observation station 11
+This is a SQL challenge from hackerank. The goal is to query the whose name does
+not start or end with a vowel without duplicates.  
+I tried to solve this problem with the MySQL language [Problem
+link](https://www.hackerrank.com/challenges/weather-observation-station-11/problem)  
+As of March 30<sup>th</sup>, 2020:
+- [X] Find a working solution on the sample input
+- [X] Submitted solution. Got correct
+- [X] Challenge solved
+
+### Weather observation station 12
+This is a SQL challenge from hackerank. The goal is to query the whose name does
+not start and end with a vowel without duplicates.  
+I tried to solve this problem with the MySQL language [Problem
+link](https://www.hackerrank.com/challenges/weather-observation-station-12/problem)  
+As of March 30<sup>th</sup>, 2020:
+- [X] Find a working solution on the sample input
+- [X] Submitted solution. Got correct
+- [X] Challenge solved
 </details>

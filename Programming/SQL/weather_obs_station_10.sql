@@ -1,0 +1,3 @@
+SELECT DISTINCT s.city
+FROM STATION AS s
+WHERE UPPER(RIGHT(s.city, 1)) NOT IN ('A','E','I','O','U');
